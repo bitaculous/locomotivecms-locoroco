@@ -21,7 +21,7 @@ set :pty, true
 set :format, :pretty
 
 # Set log level (`:debug`, `:error` or `:info`)
-set :log_level, :info
+set :log_level, :error
 
 after 'deploy:publishing', 'deploy:restart'
 namespace :deploy do
