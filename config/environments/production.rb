@@ -41,7 +41,7 @@ Bitaculous::Locoroco::Application.configure do
   # Disable Rails's static asset server (Apache or Nginx will already do this).
   config.serve_static_assets = false
 
-  # Enable serving of assets from an asset server, distributes asset requests among the corresponding four hosts
+  # Enable serving of assets from asset server(s), distributes asset requests among the corresponding four hosts
   # `locoroco.assets0.bitaculous.com`, `locoroco.assets1.bitaculous.com`, etc.
   # config.action_controller.asset_host = 'http://locoroco.assets%d.bitaculous.com'
 
