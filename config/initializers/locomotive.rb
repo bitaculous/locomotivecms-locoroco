@@ -7,22 +7,24 @@ Locomotive.configure do |config|
     multi_sites.domain = 'bitaculous.com'
 
     # Define the reserved subdomains.
-    multi_sites.reserved_subdomains = %w[locoroco www]
+    multi_sites.reserved_subdomains = %w[locoroco]
   end
 
-  # Default locale (for now, only `en`, `de`, `fr`, `pl`, `pt-BR`, `it`, `nb` and `ja` are supported)
+  # Default locale (for now, only `bg`, `cs`, `de`, `en`, `fr`, `it`, `ja`, `nb`, `pl`, `pt-BR`, `sk` and `zh-CN` are
+  # supported)
   config.default_locale = :en
 
-  # Available locales suggested to “localize” a site. You will have to pick up at least one among that list.
+  # Available locales suggested to “localize“ a site. You will have to pick up at least one among that list:
+  # `bg`, `cs`, `de`, `en`, `fr`, `it`, `ja`, `nb`, `pl`, `pt-BR`, `sk` or `zh-CN`.
   config.site_locales = %w[en de]
+
+  # Force all access to the back-office over SSL in production.
+  # config.enable_admin_ssl = Rails.env.production?
 
   # “Public” forms can be protected from Cross-Site Request Forgery (CSRF) attacks. By default, that protection is
   # disabled in order to keep backwards compatibility with the existing public forms. Note: we strongly recommend to
   # enable it. See the documentation about the `csrf_param` liquid tag.
   config.csrf_protection = true
-
-  # Force all access to the back-office over SSL in production.
-  # config.enable_admin_ssl = Rails.env.production?
 
   # Allow applications using the engine to add their own Liquid drops, variables and similar, available in Liquid
   # templates, extending the assigns used while rendering.
@@ -31,12 +33,8 @@ Locomotive.configure do |config|
   # Add extra classes other than the defined content types among a site which will potentially used by templatized pages.
   # config.models_for_templatization = %w(Product)
 
-  # Configure how many items we display in sub menu in the “Contents” section.
-  config.ui = {
-    latest_entries_nb: 5,
-    max_content_types: 4,
-    per_page:          10
-  }
+  # Add the checksum of a theme asset at the end of its path to allow public caching. By default, it's disabled.
+  config.theme_assets_checksum = true
 
   # Rack-cache settings, mainly used for the inline resizing image module.
   #
