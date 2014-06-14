@@ -40,7 +40,7 @@ Deployment
 
 1. Create deploy configuration
 
-   Copy `config/deploy/production.sample.rb` to `config/deploy/production.rb` and adjust properly
+    Copy `config/deploy/production.sample.rb` to `config/deploy/production.rb` and adjust properly
 
 2. Setup shared and release directories
 
@@ -50,9 +50,9 @@ Deployment
 
 3. Copy configurations to server
 
-   Copy `config/application.sample.yml` to `~/shared/config/application.yml` and adjust properly
+    Copy `config/application.sample.yml` to `~/shared/config/application.yml` and adjust properly
 
-   Copy `config/unicorn/production.sample.rb` to `~/shared/config/unicorn/production.rb` and adjust properly
+    Copy `config/unicorn/production.sample.rb` to `~/shared/config/unicorn/production.rb` and adjust properly
 
 4. Check required files and directories exist
 
