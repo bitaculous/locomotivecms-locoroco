@@ -1,7 +1,7 @@
 [LOCOROCO](http://bitaculous.github.io/locoroco)
 ================================================
 
-**Ready-to-Deploy [LocomotiveCMS](http://locomotivecms.com "An open source CMS for Rails") package.**
+**“Ready to deploy” [LocomotiveCMS](http://locomotivecms.com "An open source CMS for Rails") package.**
 
 [![Travis CI Status](https://travis-ci.org/bitaculous/locoroco.svg)](http://travis-ci.org/bitaculous/locoroco) [![Gemnasium Status](https://gemnasium.com/bitaculous/locoroco.svg)](https://gemnasium.com/bitaculous/locoroco)
 
@@ -14,6 +14,7 @@ At [Bitaculous](http://bitaculous.com "It's all about the bits, baby!") we use t
 * [Nginx](http://nginx.org "A free, open-source, high-performance HTTP server and reverse proxy")
 * [Unicorn](http://unicorn.bogomips.org "Rack HTTP server for fast clients and Unix")
 * [RVM](https://rvm.io "Ruby Version Manager")
+* [Capistrano](http://capistranorb.com "A remote server automation and deployment tool written in Ruby.")
 
 If you want to run [LocomotiveCMS](http://locomotivecms.com "An open source CMS for Rails") without setting up a server,
 check out [LocomotiveHosting](https://locomotivehosting.com "Host your LocomotiveCMS website here."), from the team
