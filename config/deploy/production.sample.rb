@@ -8,7 +8,7 @@ set :branch, :master
 set :keep_releases, 5
 
 set :ssh_options, {
-  keys: '<key>',
+  keys: '<key path>',
   auth_methods: %w(publickey),
   forward_agent: false
 }
