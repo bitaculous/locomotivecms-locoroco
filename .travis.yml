@@ -1,0 +1,7 @@
+language: ruby
+rvm:
+  - 2.1.2
+services:
+  - mongodb
+before_script:
+  - cp config/application.ci.yml config/application.yml

@@ -1,0 +1,27 @@
+# Ignore sublime workspace files
+*.sublime-workspace
+
+# Ignore bundler configuration
+.bundle
+
+# Ignore sass cache
+.sass-cache
+
+# Ignore bundler stubs
+bin
+
+# Ignore application configuration
+config/application.yml
+
+# Ignore capistrano configuration for production
+config/deploy/production.rb
+
+# Ignore unicorn configuration for production
+config/unicorn/production.rb
+
+# Ignore generated assets
+public/assets
+
+# Ignore all log and temporary files
+log/*.log
+tmp
