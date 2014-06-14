@@ -72,6 +72,10 @@ group :assets do
 
     gem 'compass-rails', '~> 1.1.7'
   end
+
+  group :sprockets do
+    gem 'turbo-sprockets-rails3', '~> 0.3.11'
+  end
 end
 
 group :deployment do
