@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Locoroco by bitaculous</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Locoroco</h1>
+        <p>Ready-to-Deploy LocomotiveCMS package.</p>
+
+        <p class="view"><a href="https://github.com/bitaculous/locoroco">View the Project on GitHub <small>bitaculous/locoroco</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/bitaculous/locoroco/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/bitaculous/locoroco/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/bitaculous/locoroco">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h2>
+<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
+
+<p>At <a href="http://bitaculous.com" title="It's all about the bits, baby!">Bitaculous</a> we use the following stack to run
+<a href="http://locomotivecms.com" title="An open source CMS for Rails">LocomotiveCMS</a>, that's why this package is optimized for:</p>
+
+<ul>
+<li><a href="http://nginx.org" title="A free, open-source, high-performance HTTP server and reverse proxy">Nginx</a></li>
+<li><a href="http://unicorn.bogomips.org" title="Rack HTTP server for fast clients and Unix">Unicorn</a></li>
+<li><a href="https://rvm.io" title="Ruby Version Manager">RVM</a></li>
+</ul><h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<ol>
+<li>
+<p>Clone repository</p>
+
+<pre><code>$ git co git@github.com:bitaculous/locoroco.git
+</code></pre>
+</li>
+<li>
+<p>Install dependencies with <a href="http://bundler.io" title="The best way to manage a Ruby application's gems">Bundler</a></p>
+
+<pre><code>$ cd locoroco
+$ bundle install
+</code></pre>
+</li>
+<li><p>Copy <code>config/application.sample.yml</code> to <code>config/application.yml</code> and adjust properly</p></li>
+</ol><h2>
+<a name="deployment" class="anchor" href="#deployment"><span class="octicon octicon-link"></span></a>Deployment</h2>
+
+<h3>
+<a name="first-deployment" class="anchor" href="#first-deployment"><span class="octicon octicon-link"></span></a>First deployment</h3>
+
+<ol>
+<li>
+<p>Create deploy configuration</p>
+
+<p>Copy <code>config/deploy/production.sample.rb</code> to <code>config/deploy/production.rb</code> and adjust properly</p>
+</li>
+<li>
+<p>Setup shared and release directories</p>
+
+<pre><code>$ cap &lt;stage&gt; deploy:check:directories
+</code></pre>
+</li>
+<li>
+<p>Copy configurations to server</p>
+
+<p>Copy <code>config/application.sample.yml</code> to <code>~/shared/config/application.yml</code> and adjust properly</p>
+
+<p>Copy <code>config/unicorn/production.sample.rb</code> to <code>~/shared/config/unicorn/production.rb</code> and adjust properly</p>
+</li>
+<li>
+<p>Check required files and directories exist</p>
+
+<pre><code>$ cap &lt;stage&gt; deploy:check
+</code></pre>
+</li>
+</ol><h3>
+<a name="regular-deployment" class="anchor" href="#regular-deployment"><span class="octicon octicon-link"></span></a>Regular deployment</h3>
+
+<pre><code>$ cap &lt;stage&gt; deploy
+</code></pre>
+
+<h2>
+<a name="unicorn" class="anchor" href="#unicorn"><span class="octicon octicon-link"></span></a>Unicorn</h2>
+
+<p>Start Unicorn</p>
+
+<pre><code>$ cap &lt;stage&gt; unicorn:start
+</code></pre>
+
+<p>Stop Unicorn (QUIT)</p>
+
+<pre><code>$ cap &lt;stage&gt; unicorn:stop
+</code></pre>
+
+<p>Restart Unicorn (USR2 + QUIT); use this when <code>preload_app true</code></p>
+
+<pre><code>$ cap &lt;stage&gt; unicorn:restart
+</code></pre>
+
+<h2>
+<a name="code-status" class="anchor" href="#code-status"><span class="octicon octicon-link"></span></a>Code status</h2>
+
+<p><a href="http://travis-ci.org/bitaculous/locoroco"><img src="https://travis-ci.org/bitaculous/locoroco.svg" alt="Travis CI Status"></a> <a href="https://gemnasium.com/bitaculous/locoroco"><img src="https://gemnasium.com/bitaculous/locoroco.svg" alt="Gemnasium Status"></a></p>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>Locoroco is released under the MIT License (MIT), see <a href="https://raw.githubusercontent.com/bitaculous/locoroco/master/LICENSE" title="License">LICENSE</a>.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/bitaculous">bitaculous</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
