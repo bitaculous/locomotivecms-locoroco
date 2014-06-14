@@ -1,1 +1,1 @@
-- [ ] Enable serving of assets from asset server(s)
+[ ] Enable serving of assets from asset server(s)
