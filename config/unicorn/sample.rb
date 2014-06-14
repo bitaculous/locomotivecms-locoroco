@@ -8,8 +8,8 @@ working_directory app_path
 # Preload application, this loads the application in the master process before forking worker processes.
 preload_app true
 
-# Spawn master worker for user `unicorn` and group `locoroco.bitaculous.com`.
-# user 'unicorn', 'locoroco.bitaculous.com'
+# Spawn master worker for user `unicorn` and group `foo.bar.com`.
+# user 'unicorn', 'foo.bar.com'
 
 # Use at least one worker per core if you're on a dedicated server, more will usually help for “short waits” on
 # databases / caches.
