@@ -16,7 +16,7 @@
     <div class="wrapper">
       <header>
         <h1>Locoroco</h1>
-        <p>“Ready to deploy” LocomotiveCMS package.</p>
+        <p>A “ready to deploy” LocomotiveCMS package.</p>
 
         <p class="view"><a href="https://github.com/bitaculous/locoroco">View the Project on GitHub <small>bitaculous/locoroco</small></a></p>
 
@@ -28,7 +28,23 @@
         </ul>
       </header>
       <section>
-        <h2>
+        <p>We at <a href="http://bitaculous.com" title="It's all about the bits, baby!">Bitaculous</a> really like
+<a href="http://locomotivecms.com" title="An open source CMS for Rails">LocomotiveCMS</a>, it's our favorite tool for developing websites,
+it's <a href="http://www.locomotivecms.com/features" title="LocomotiveCMS features">awesome</a>. That's why we built
+<a href="http://bitaculous.github.io/locoroco" title="A “ready to deploy” LocomotiveCMS package.">LocoRoco</a>, so you can easier use
+<a href="http://locomotivecms.com" title="An open source CMS for Rails">LocomotiveCMS</a> on your server.</p>
+
+<p>If you want to run <a href="http://locomotivecms.com" title="An open source CMS for Rails">LocomotiveCMS</a> without setting up a server,
+check out <a href="https://locomotivehosting.com" title="Host your LocomotiveCMS website here.">LocomotiveHosting</a>, a hosting solution
+from the <a href="http://locomotivecms.com/crew" title="The crew behind LocomotiveCMS">team behind LocomotiveCMS</a>.</p>
+
+<h2>
+<a name="credits" class="anchor" href="#credits"><span class="octicon octicon-link"></span></a>Credits</h2>
+
+<p><a href="http://www.scei.co.jp/index_e.html" title="Sony Computer Entertainment">Sony Computer Entertainment</a> for creating
+<a href="http://en.wikipedia.org/wiki/LocoRoco" title="LocoRoco">The Real LocoRoco</a>, an awesome platform video game.</p>
+
+<h2>
 <a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
 
 <p>At <a href="http://bitaculous.com" title="It's all about the bits, baby!">Bitaculous</a> we use the following stack to run
@@ -38,30 +54,35 @@
 <li><a href="http://nginx.org" title="A free, open-source, high-performance HTTP server and reverse proxy">Nginx</a></li>
 <li><a href="http://unicorn.bogomips.org" title="Rack HTTP server for fast clients and Unix">Unicorn</a></li>
 <li><a href="https://rvm.io" title="Ruby Version Manager">RVM</a></li>
+<li><a href="http://bundler.io" title="The best way to manage a Ruby application's gems">Bundler</a></li>
 <li><a href="http://capistranorb.com" title="A remote server automation and deployment tool written in Ruby.">Capistrano</a></li>
-</ul><p>If you want to run <a href="http://locomotivecms.com" title="An open source CMS for Rails">LocomotiveCMS</a> without setting up a server,
-check out <a href="https://locomotivehosting.com" title="Host your LocomotiveCMS website here.">LocomotiveHosting</a>, from the team
-behind LocomotiveCMS.</p>
-
-<h2>
-<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+</ul><h2>
+<a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting started</h2>
 
 <ol>
+<li><p><a href="https://github.com/bitaculous/locoroco/archive/master.zip" title="Download the LocoRoco master as a zip file">Download the LocoRoco master</a> as a zip file</p></li>
+<li><p>Unpack the zip file</p></li>
 <li>
-<p>Clone repository</p>
-
-<pre><code>$ git co git@github.com:bitaculous/locoroco.git
-</code></pre>
-</li>
-<li>
-<p>Install dependencies with <a href="http://bundler.io" title="The best way to manage a Ruby application's gems">Bundler</a></p>
+<p>Install all dependencies with <a href="http://bundler.io" title="The best way to manage a Ruby application's gems">Bundler</a>:</p>
 
 <pre><code>$ cd locoroco
 $ bundle install
 </code></pre>
 </li>
-<li><p>Copy <code>config/sample.yml</code> to <code>config/application.yml</code> and adjust properly</p></li>
-</ol><h2>
+<li>
+<p>Create the application configuration:</p>
+
+<p>Copy <code>config/sample.yml</code> to <code>config/application.yml</code> and adjust properly</p>
+</li>
+<li>
+<p>Start <a href="http://unicorn.bogomips.org" title="Rack HTTP server for fast clients and Unix">Unicorn</a>:</p>
+
+<pre><code>$ unicorn_rails
+</code></pre>
+</li>
+</ol><p>That's it, <a href="http://locomotivecms.com" title="An open source CMS for Rails">LocomotiveCMS</a> should run <a href="http://0.0.0.0:8080" title="LocomotiveCMS installation">on</a>.</p>
+
+<h2>
 <a name="deployment" class="anchor" href="#deployment"><span class="octicon octicon-link"></span></a>Deployment</h2>
 
 <h3>
@@ -69,37 +90,46 @@ $ bundle install
 
 <ol>
 <li>
-<p>Create deploy configuration</p>
+<p>Adjust / create configuration(s):</p>
+
+<p>Adjust <code>config/deploy.rb</code> properly</p>
 
 <p>Copy <code>config/deploy/sample.rb</code> to <code>config/deploy/&lt;stage&gt;.rb</code> and adjust properly</p>
+
+<p>Copy <code>config/unicorn/sample.rb</code> to <code>config/unicorn/&lt;stage&gt;.rb</code> and adjust properly</p>
 </li>
 <li>
-<p>Setup shared and release directories</p>
+<p>Setup <code>shared</code> and <code>release</code> directory on stage:</p>
 
 <pre><code>$ cap &lt;stage&gt; deploy:check:directories
 </code></pre>
 </li>
 <li>
-<p>Copy configurations to server</p>
+<p>Copy configurations to stage:</p>
 
-<p>Copy <code>config/sample.yml</code> to <code>~/shared/config/application.yml</code> and adjust properly</p>
+<p>Copy <code>config/application.yml</code> to <code>~shared/config/application.yml</code> (on stage)</p>
 
-<p>Copy <code>config/unicorn/sample.rb</code> to <code>~/shared/config/unicorn/&lt;stage&gt;.rb</code> and adjust properly</p>
+<p>Copy <code>config/unicorn/&lt;stage&gt;.rb</code> to <code>~shared/config/unicorn/&lt;stage&gt;.rb</code> (on stage)</p>
 </li>
 <li>
-<p>Check required files and directories exist</p>
+<p>Check that the required files and directories exist on stage:</p>
 
 <pre><code>$ cap &lt;stage&gt; deploy:check
 </code></pre>
 </li>
+<li><p>Adjust <a href="http://locomotivecms.com" title="An open source CMS for Rails">LocomotiveCMS</a> initializer
+(<code>config/initializers/locomotive.rb</code>).</p></li>
+<li><p>Adjust <a href="https://github.com/carrierwaveuploader/carrierwave" title="Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks">CarrierWave</a>
+initializer (<code>config/initializers/carrierwave.rb</code>) if assets are hosted on Amazon S3 (optional).</p></li>
+<li><p>Continue with <code>Regular deployment</code></p></li>
 </ol><h3>
 <a name="regular-deployment" class="anchor" href="#regular-deployment"><span class="octicon octicon-link"></span></a>Regular deployment</h3>
 
-<pre><code>$ cap &lt;stage&gt; deploy
-</code></pre>
-
-<h2>
-<a name="unicorn" class="anchor" href="#unicorn"><span class="octicon octicon-link"></span></a>Unicorn</h2>
+<ol>
+<li><p>Check-in your changes</p></li>
+<li><p>Run <code>$ cap &lt;stage&gt; deploy</code> to deploy a new version to stage</p></li>
+</ol><h3>
+<a name="unicorn" class="anchor" href="#unicorn"><span class="octicon octicon-link"></span></a>Unicorn</h3>
 
 <p>Start Unicorn</p>
 
@@ -122,9 +152,23 @@ $ bundle install
 <p><a href="http://travis-ci.org/bitaculous/locoroco"><img src="https://travis-ci.org/bitaculous/locoroco.svg" alt="Travis CI Status"></a> <a href="https://gemnasium.com/bitaculous/locoroco"><img src="https://gemnasium.com/bitaculous/locoroco.svg" alt="Gemnasium Status"></a></p>
 
 <h2>
+<a name="bug-reports" class="anchor" href="#bug-reports"><span class="octicon octicon-link"></span></a>Bug Reports</h2>
+
+<p>Github Issues are used for managing bug reports and feature requests. If you run into issues, please search the issues
+and submit new problems <a href="https://github.com/bitaculous/locoroco/issues" title="Github Issues">here</a>.</p>
+
+<h2>
+<a name="versioning" class="anchor" href="#versioning"><span class="octicon octicon-link"></span></a>Versioning</h2>
+
+<p>This library aims to adhere to <a href="http://semver.org">Semantic Versioning 2.0.0</a>. Violations of this scheme should be reported as bugs.
+Specifically, if a minor or patch version is released that breaks backward compatibility, that version should be
+immediately yanked and / or a new version should be immediately released that restores compatibility.</p>
+
+<h2>
 <a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
 
-<p>Locoroco is released under the MIT License (MIT), see <a href="https://raw.githubusercontent.com/bitaculous/locoroco/master/LICENSE" title="License">LICENSE</a>.</p>
+<p><a href="http://bitaculous.github.io/locoroco" title="A “ready to deploy” LocomotiveCMS package.">LocoRoco</a> is released under the MIT
+License (MIT), see <a href="https://raw.githubusercontent.com/bitaculous/locoroco/master/LICENSE" title="License">LICENSE</a>.</p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/bitaculous">bitaculous</a></p>
