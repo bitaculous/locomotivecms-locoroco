@@ -11,3 +11,8 @@ test:
 
 production:
   MONGODB_URI: mongodb://user:password@server:port_name/database"
+
+  # If assets are hosted on Amazon S3:
+  # S3_KEY_ID: 'S3_KEY_ID'
+  # S3_SECRET_KEY: 'S3_SECRET_KEY'
+  # S3_BUCKET_REGION: 'S3_BUCKET_REGION'

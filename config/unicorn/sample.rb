@@ -1,5 +1,5 @@
 # Set your full path to application.
-app_path = '/var/www/app/current'
+app_path = '<path to application>/current'
 
 # Set application path as working directory. Help ensure the application will always spawn in the symlinked application
 # directory.
@@ -36,9 +36,6 @@ stderr_path "#{app_path}/log/unicorn.log"
 rails_env = ENV['RAILS_ENV'] || 'production'
 
 before_fork do |server, worker|
-  # There's no need for the master process to hold a connection
-  # defined?(ActiveRecord::Base) && ActiveRecord::Base.connection.disconnect!
-
   # The following is only recommended for memory / DB-constrained installations. It is not needed if your system can
   # house twice as many worker processes as you have configured.
   #
@@ -63,10 +60,8 @@ before_fork do |server, worker|
 end
 
 after_fork do |server, worker|
-  # defined?(ActiveRecord::Base) && ActiveRecord::Base.establish_connection
-
   # If `preload_app true`, then you may also want to check and restart any other shared sockets / descriptors such as
-  # Memcached, Redis, etc.
+  # Memcached, Redis, etc. - here is the perfect place for.
 
   # Per-process listener for migrations, debugging etc.
   # address = "127.0.0.1:#{9293 + worker.nr}"

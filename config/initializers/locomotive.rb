@@ -7,7 +7,7 @@ Locomotive.configure do |config|
     multi_sites.domain = 'bitaculous.com'
 
     # Define the reserved subdomains.
-    multi_sites.reserved_subdomains = %w[locoroco]
+    # multi_sites.reserved_subdomains = %w[locoroco]
   end
 
   # Default locale (for now, only `bg`, `cs`, `de`, `en`, `fr`, `it`, `ja`, `nb`, `pl`, `pt-BR`, `sk` and `zh-CN` are

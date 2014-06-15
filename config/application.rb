@@ -28,8 +28,8 @@ module Bitaculous
       # placeholder for all plugins not explicitly named.
       # config.plugins = [:exception_notification, :ssl_requirement, :all]
 
-      # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone. Run `rake -D time`
-      # for a list of tasks for finding time zone names. The default is `UTC`.
+      # Set `Time.zone` default to the specified zone. Run `rake -D time` for a list of tasks for finding time zone names.
+      # The default is `UTC`.
       # config.time_zone = 'Central Time (US & Canada)'
 
       # Enable escaping HTML in JSON.
