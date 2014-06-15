@@ -8,8 +8,8 @@
 We at [Bitaculous](http://bitaculous.com "It's all about the bits, baby!") really like
 [LocomotiveCMS](http://locomotivecms.com "An open source CMS for Rails"), it's our favorite tool for developing websites,
 it's [awesome](http://www.locomotivecms.com/features "LocomotiveCMS features"). That's why we built
-[LocoRoco](http://bitaculous.github.io/locoroco "A “ready to deploy” LocomotiveCMS package."), so you can easier use
-[LocomotiveCMS](http://locomotivecms.com "An open source CMS for Rails") on your server.
+[LocoRoco](http://bitaculous.github.io/locoroco "A “ready to deploy” LocomotiveCMS package."), so you can easier start
+using [LocomotiveCMS](http://locomotivecms.com "An open source CMS for Rails") on your server.
 
 If you want to run [LocomotiveCMS](http://locomotivecms.com "An open source CMS for Rails") without setting up a server,
 check out [LocomotiveHosting](https://locomotivehosting.com "Host your LocomotiveCMS website here."), a hosting solution
