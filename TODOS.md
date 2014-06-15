@@ -1,2 +1,3 @@
+- [ ] Update helpers for “rspec-rails”
 - [ ] Enable serving of assets from asset server(s)
 - [ ] “turbo-sprockets-rails3”
