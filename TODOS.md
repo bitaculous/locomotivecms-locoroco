@@ -1,1 +1,0 @@
-- [ ] “turbo-sprockets-rails3”
