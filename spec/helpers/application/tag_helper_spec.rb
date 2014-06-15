@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe Application::TagHelper do
   describe '#html_tag' do
