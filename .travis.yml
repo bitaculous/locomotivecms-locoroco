@@ -4,4 +4,4 @@ rvm:
 services:
   - mongodb
 before_script:
-  - cp config/application.ci.yml config/application.yml
+  - cp ressources/config/application.ci.yml config/application.yml
