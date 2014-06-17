@@ -3,7 +3,8 @@
 
 **A “ready to deploy” [LocomotiveCMS](http://locomotivecms.com "An open source CMS for Rails") package.**
 
-[![Travis CI Status](https://travis-ci.org/bitaculous/locoroco.svg)](http://travis-ci.org/bitaculous/locoroco) [![Gemnasium Status](https://gemnasium.com/bitaculous/locoroco.svg)](https://gemnasium.com/bitaculous/locoroco)
+[![Travis CI Status](https://travis-ci.org/bitaculous/locoroco.svg)](http://travis-ci.org/bitaculous/locoroco)
+[![Gemnasium Status](https://gemnasium.com/bitaculous/locoroco.svg)](https://gemnasium.com/bitaculous/locoroco)
 
 We at [Bitaculous](http://bitaculous.com "It's all about the bits, baby!") really like
 [LocomotiveCMS](http://locomotivecms.com "An open source CMS for Rails"), it's our favorite tool for developing websites,
