@@ -50,7 +50,7 @@ as a zip file
 
 4. Create the application configuration:
 
-    Copy `config/sample.yml` to `config/application.yml` and adjust properly
+    Copy `ressources/config/application.yml` to `config/application.yml` and adjust properly
 
 5. Start [Unicorn](http://unicorn.bogomips.org "Rack HTTP server for fast clients and Unix"):
 
