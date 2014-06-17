@@ -1,4 +1,4 @@
-[LOCOROCO](http://bitaculous.github.io/locoroco "A “ready to deploy” LocomotiveCMS package.")
+[LocoRoco](http://bitaculous.github.io/locoroco "A “ready to deploy” LocomotiveCMS package.")
 =============================================================================================
 
 **A “ready to deploy” [LocomotiveCMS](http://locomotivecms.com "An open source CMS for Rails") package.**
