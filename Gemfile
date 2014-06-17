@@ -49,7 +49,7 @@ group :development do
 end
 
 group :test do
-  gem 'nyan-cat-formatter', '~> 0.8.0'
+  gem 'nyan-cat-formatter', '~> 0.9.0'
 end
 
 group :development, :test do
