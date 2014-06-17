@@ -1,3 +1,4 @@
+# Lock configuration for Capistrano 3.2.1
 lock '3.2.1'
 
 set :domain, 'bitaculous.com'

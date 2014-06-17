@@ -72,9 +72,9 @@ Deployment
 
     Adjust `config/deploy.rb` properly
 
-    Copy `config/deploy/sample.rb` to `config/deploy/<stage>.rb` and adjust properly
+    Copy `ressources/config/deploy/sample.rb` to `config/deploy/<stage>.rb` and adjust properly
 
-    Copy `config/unicorn/sample.rb` to `config/unicorn/<stage>.rb` and adjust properly
+    Copy `ressources/config/unicorn/sample.rb` to `config/unicorn/<stage>.rb` and adjust properly
 
 2. Setup `shared` and `release` directory on stage:
 
@@ -104,7 +104,7 @@ initializer (`config/initializers/carrierwave.rb`) if assets are hosted on Amazo
 
 ### Regular deployment
 
-1. Check-in your changes
+1. Check-in and push your changes
 
 2. Run ```$ cap <stage> deploy``` to deploy a new version to stage
 
