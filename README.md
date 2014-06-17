@@ -66,7 +66,7 @@ That's it, [LocomotiveCMS](http://locomotivecms.com "An open source CMS for Rail
 Configuration
 -------------
 
-# [Nginx](http://nginx.org "A free, open-source, high-performance HTTP server and reverse proxy")
+### [Nginx](http://nginx.org "A free, open-source, high-performance HTTP server and reverse proxy")
 
 Take a look at `ressources/config/nginx/sample.conf` as an inspiration on how to configure [Nginx](http://nginx.org "A free, open-source, high-performance HTTP server and reverse proxy").
 
