@@ -18,6 +18,9 @@ from the [team behind LocomotiveCMS](http://locomotivecms.com/crew "The crew beh
 Credits
 -------
 
+The [team behind LocomotiveCMS](http://locomotivecms.com/crew "The crew behind LocomotiveCMS") for creating
+[LocomotiveCMS](http://locomotivecms.com "An open source CMS for Rails").
+
 [Sony Computer Entertainment](http://www.scei.co.jp/index_e.html "Sony Computer Entertainment") for creating
 [The Real LocoRoco](http://en.wikipedia.org/wiki/LocoRoco "LocoRoco"), an awesome platform video game.
 
