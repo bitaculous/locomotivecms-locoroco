@@ -3,5 +3,8 @@ COOKIE_STORE_KEY: "_bitaculous_locoroco_session"
 
 DRAGONFLY_SECRET: "d126b5c64017d7907dad5c191ab39867087a78c08e952754c271ce62b955b5a6"
 
+# Set timezone to a specified zone. Run `rake -D time` for a list of tasks for finding time zone names.
+TIMEZONE: "Berlin"
+
 test:
   MONGODB_URI: mongodb://127.0.0.1:27017/bitaculous-locoroco_test"
