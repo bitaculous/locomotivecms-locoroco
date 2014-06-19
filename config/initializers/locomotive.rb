@@ -15,7 +15,7 @@ Locomotive.configure do |config|
   config.default_locale = :en
 
   # Available locales suggested to “localize“ a site. You will have to pick up at least one among that list:
-  # `bg`, `cs`, `de`, `en`, `fr`, `it`, `ja`, `nb`, `pl`, `pt-BR`, `sk` or `zh-CN`.
+  # `bg`, `cs`, `de`, `en`, `fr`, `it`, `ja`, `nb`, `pl`, `pt-BR`, `sk`, `sr` or `zh-CN`.
   config.site_locales = %w[en de]
 
   # Force all access to the back-office over SSL in production.
