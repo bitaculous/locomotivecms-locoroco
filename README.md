@@ -40,7 +40,7 @@ At [Bitaculous](http://bitaculous.com "It's all about the bits, baby!") we use t
 Getting started
 ---------------
 
-1. [Download the LocoRoco master](https://github.com/bitaculous/locoroco/archive/master.zip "Download the LocoRoco master as a zip file")
+1. Download the [LocoRoco master](https://github.com/bitaculous/locoroco/archive/master.zip "Download the LocoRoco master as a zip file")
 or a specific [release](https://github.com/bitaculous/locoroco/archive/master.zip "LocoRoco releases") as a zip file
 
 2. Unpack the zip file
