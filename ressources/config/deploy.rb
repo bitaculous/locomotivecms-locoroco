@@ -8,6 +8,8 @@ set :linked_dirs, %w{log public/system public/sites tmp/cache tmp/pids tmp/socke
 
 set :scm, :git
 set :repo_url, 'https://github.com/bitaculous/locoroco.git'
+ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
+set :keep_releases, 5
 
 # set :rvm_type, :system
 # set :rvm_ruby_string, 'ruby-2.1.2@bitaculous-locoroco'
