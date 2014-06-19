@@ -13,11 +13,14 @@ bin
 # Ignore application configuration
 config/application.yml
 
-# Ignore capistrano configuration for production
-config/deploy/production.rb
+# Ignore deploy configuration(s)
+config/deploy/*.rb
 
-# Ignore unicorn configuration for production
-config/unicorn/production.rb
+# Ignore environment configuration(s)
+config/environments/*.rb
+
+# Ignore unicorn configuration(s)
+config/unicorn/*.rb
 
 # Ignore generated assets
 public/assets
