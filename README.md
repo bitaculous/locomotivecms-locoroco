@@ -73,6 +73,8 @@ Deployment
 
     Adjust `config/deploy.rb` properly
 
+    Copy `ressources/config/environments/sample.rb` to `config/environments/<stage>.rb` and adjust properly
+
     Copy `ressources/config/deploy/sample.rb` to `config/deploy/<stage>.rb` and adjust properly
 
     Copy `ressources/config/unicorn/sample.rb` to `config/unicorn/<stage>.rb` and adjust properly
@@ -86,6 +88,8 @@ Deployment
 3. Copy configurations to stage:
 
     Copy `config/application.yml` to `~shared/config/application.yml` (on stage)
+
+    Copy `config/environments/<stage>.rb` to `~shared/config/environments/<stage>.rb` (on stage)
 
     Copy `config/unicorn/<stage>.rb` to `~shared/config/unicorn/<stage>.rb` (on stage)
 
