@@ -64,13 +64,6 @@ as a zip file
 
 That's it, [LocomotiveCMS](http://locomotivecms.com "An open source CMS for Rails") should run [on](http://0.0.0.0:8080 "LocomotiveCMS installation").
 
-Configuration
--------------
-
-### Nginx
-
-Take a look at `ressources/config/nginx/sample.conf` as an inspiration on how to configure [Nginx](http://nginx.org "A free, open-source, high-performance HTTP server and reverse proxy").
-
 Deployment
 ----------
 
@@ -135,6 +128,13 @@ Restart Unicorn (USR2 + QUIT); use this when `preload_app true`
 ```
 $ cap <stage> unicorn:restart
 ```
+
+Configuration
+-------------
+
+### Nginx
+
+Take a look at `ressources/config/nginx/sample.conf` as an inspiration on how to configure [Nginx](http://nginx.org "A free, open-source, high-performance HTTP server and reverse proxy").
 
 Bug Reports
 -----------
