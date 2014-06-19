@@ -10,9 +10,6 @@
 # Ignore bundler stubs
 bin
 
-# Ignore application configuration
-config/application.yml
-
 # Ignore deploy configuration(s)
 config/deploy/*.rb
 
@@ -21,6 +18,12 @@ config/environments/*.rb
 
 # Ignore unicorn configuration(s)
 config/unicorn/*.rb
+
+# Ignore application configuration
+config/application.yml
+
+# Ignore deploy configuration
+config/deploy.rb
 
 # Ignore generated assets
 public/assets
