@@ -63,7 +63,8 @@ from the <a href="http://locomotivecms.com/crew" title="The crew behind Locomoti
 <a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting started</h2>
 
 <ol>
-<li><p><a href="https://github.com/bitaculous/locoroco/archive/master.zip" title="Download the LocoRoco master as a zip file">Download the LocoRoco master</a> as a zip file</p></li>
+<li><p>Download the <a href="https://github.com/bitaculous/locoroco/archive/master.zip" title="Download the LocoRoco master as a zip file">LocoRoco master</a>
+or a specific <a href="https://github.com/bitaculous/locoroco/releases" title="LocoRoco releases">release</a> as a zip file</p></li>
 <li><p>Unpack the zip file</p></li>
 <li>
 <p>Install all dependencies with <a href="http://bundler.io" title="The best way to manage a Ruby application's gems">Bundler</a>:</p>
@@ -86,14 +87,6 @@ $ bundle install
 </ol><p>That's it, <a href="http://locomotivecms.com" title="An open source CMS for Rails">LocomotiveCMS</a> should run <a href="http://0.0.0.0:8080" title="LocomotiveCMS installation">on</a>.</p>
 
 <h2>
-<a name="configuration" class="anchor" href="#configuration"><span class="octicon octicon-link"></span></a>Configuration</h2>
-
-<h3>
-<a name="nginx" class="anchor" href="#nginx"><span class="octicon octicon-link"></span></a>Nginx</h3>
-
-<p>Take a look at <code>ressources/config/nginx/sample.conf</code> as an inspiration on how to configure <a href="http://nginx.org" title="A free, open-source, high-performance HTTP server and reverse proxy">Nginx</a>.</p>
-
-<h2>
 <a name="deployment" class="anchor" href="#deployment"><span class="octicon octicon-link"></span></a>Deployment</h2>
 
 <h3>
@@ -101,9 +94,11 @@ $ bundle install
 
 <ol>
 <li>
-<p>Adjust / create configuration(s):</p>
+<p>Create configurations:</p>
 
-<p>Adjust <code>config/deploy.rb</code> properly</p>
+<p>Copy <code>ressources/config/deploy.rb</code> to <code>config/deploy.rb</code> and adjust properly</p>
+
+<p>Copy <code>ressources/config/environments/sample.rb</code> to <code>config/environments/&lt;stage&gt;.rb</code> and adjust properly</p>
 
 <p>Copy <code>ressources/config/deploy/sample.rb</code> to <code>config/deploy/&lt;stage&gt;.rb</code> and adjust properly</p>
 
@@ -119,6 +114,8 @@ $ bundle install
 <p>Copy configurations to stage:</p>
 
 <p>Copy <code>config/application.yml</code> to <code>~shared/config/application.yml</code> (on stage)</p>
+
+<p>Copy <code>config/environments/&lt;stage&gt;.rb</code> to <code>~shared/config/environments/&lt;stage&gt;.rb</code> (on stage)</p>
 
 <p>Copy <code>config/unicorn/&lt;stage&gt;.rb</code> to <code>~shared/config/unicorn/&lt;stage&gt;.rb</code> (on stage)</p>
 </li>
@@ -156,6 +153,14 @@ initializer (<code>config/initializers/carrierwave.rb</code>) if assets are host
 
 <pre><code>$ cap &lt;stage&gt; unicorn:restart
 </code></pre>
+
+<h2>
+<a name="configuration" class="anchor" href="#configuration"><span class="octicon octicon-link"></span></a>Configuration</h2>
+
+<h3>
+<a name="nginx" class="anchor" href="#nginx"><span class="octicon octicon-link"></span></a>Nginx</h3>
+
+<p>Take a look at <code>ressources/config/nginx/sample.conf</code> as an inspiration on how to configure <a href="http://nginx.org" title="A free, open-source, high-performance HTTP server and reverse proxy">Nginx</a>.</p>
 
 <h2>
 <a name="code-status" class="anchor" href="#code-status"><span class="octicon octicon-link"></span></a>Code status</h2>
