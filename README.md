@@ -69,9 +69,9 @@ Deployment
 
 ### First deployment
 
-1. Adjust / create configuration(s):
+1. Create configurations:
 
-    Adjust `config/deploy.rb` properly
+    Copy `ressources/config/deploy.rb` to `config/deploy.rb` and adjust properly
 
     Copy `ressources/config/environments/sample.rb` to `config/environments/<stage>.rb` and adjust properly
 
