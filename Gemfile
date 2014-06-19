@@ -12,6 +12,8 @@ group :default do
   group :locomotive_cms do
     gem 'locomotive_cms', '~> 2.5.4', require: 'locomotive/engine'
     # gem 'locomotive_cms', github: 'locomotivecms/engine', branch: 'master', require: 'locomotive/engine'
+
+    gem 'liquids', github: 'bitaculous/liquids'
   end
 
   group :rack do
