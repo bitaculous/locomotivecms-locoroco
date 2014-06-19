@@ -30,7 +30,7 @@ module Bitaculous
 
       # Set `Time.zone` default to a specified zone. Run `rake -D time` for a list of tasks for finding time zone names.
       # The default is `UTC`.
-      # config.time_zone = 'Central Time (US & Canada)'
+      config.time_zone = 'Berlin'
 
       # Enable escaping HTML in JSON.
       config.active_support.escape_html_entities_in_json = true
