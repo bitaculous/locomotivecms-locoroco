@@ -41,7 +41,7 @@ Getting started
 ---------------
 
 1. [Download the LocoRoco master](https://github.com/bitaculous/locoroco/archive/master.zip "Download the LocoRoco master as a zip file")
-as a zip file
+or a specific [release](https://github.com/bitaculous/locoroco/archive/master.zip "LocoRoco releases") as a zip file
 
 2. Unpack the zip file
 
