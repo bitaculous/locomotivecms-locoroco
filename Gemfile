@@ -10,8 +10,7 @@ group :default do
   end
 
   group :locomotive_cms do
-    gem 'locomotive_cms', '~> 2.5.4'
-
+    gem 'locomotive_cms', '~> 2.5.4', require: 'locomotive/engine'
     # gem 'locomotive_cms', github: 'locomotivecms/engine', branch: 'master', require: 'locomotive/engine'
   end
 
@@ -25,7 +24,6 @@ group :default do
 
   group :configuration do
     # gem 'figaro', '~> 0.7.0'
-
     gem 'figaro', github: 'laserlemon/figaro'
   end
 
