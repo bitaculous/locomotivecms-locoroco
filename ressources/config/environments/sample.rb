@@ -4,9 +4,6 @@ Bitaculous::Locoroco::Application.configure do
   # Enable threaded mode.
   config.threadsafe!
 
-  # Code is not reloaded between requests.
-  config.cache_classes = true
-
   # Enable dependency loading for rake tasks.
   config.dependency_loading = true if $rails_rake_task
 
@@ -23,6 +20,9 @@ Bitaculous::Locoroco::Application.configure do
   # config.force_ssl = true
 
   # === Caching ===
+
+  # Code is not reloaded between requests.
+  config.cache_classes = true
 
   # Use a different cache store.
   # config.cache_store = :mem_cache_store
