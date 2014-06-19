@@ -28,9 +28,8 @@ module Bitaculous
       # placeholder for all plugins not explicitly named.
       # config.plugins = [:exception_notification, :ssl_requirement, :all]
 
-      # Set `Time.zone` default to a specified zone. Run `rake -D time` for a list of tasks for finding time zone names.
-      # The default is `UTC`.
-      config.time_zone = 'Berlin'
+      # Set `Time.zone` default to a specified zone if `ENV['TIMEZONE']` is available.
+      config.time_zone = ENV['TIMEZONE'] if ENV['TIMEZONE']
 
       # Enable escaping HTML in JSON.
       config.active_support.escape_html_entities_in_json = true

@@ -3,6 +3,9 @@ COOKIE_STORE_KEY: "COOKIE_STORE_KEY"
 
 DRAGONFLY_SECRET: "DRAGONFLY_SECRET"
 
+# Set timezone to a specified zone. Run `rake -D time` for a list of tasks for finding time zone names.
+# TIMEZONE: "UTC"
+
 development:
   MONGODB_URI: mongodb://user:password@server:port_name/database"
 
