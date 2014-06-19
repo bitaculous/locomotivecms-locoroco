@@ -43,14 +43,14 @@ Bitaculous::Locoroco::Application.configure do
 
   # Enable serving of assets from asset server(s), distributes asset requests among the corresponding four hosts
   # `locoroco.assets0.bitaculous.com`, `locoroco.assets1.bitaculous.com`, etc.
-  config.action_controller.asset_host = '//locoroco.assets%d.bitaculous.com'
+  # config.action_controller.asset_host = '//locoroco.assets%d.bitaculous.com'
 
   # Defaults to nil and saved in location specified by `config.assets.prefix`.
   # config.assets.manifest = YOUR_PATH
 
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = 'X-Sendfile' # For Apache HTTP Server
-  config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # For Nginx
+  # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # For Nginx
 
   # === Logging ===
 
