@@ -21,7 +21,7 @@ group :default do
   end
 
   group :management do
-    gem 'foreman', '~> 0.71.0'
+    gem 'foreman', '~> 0.74.0'
   end
 
   group :configuration do
