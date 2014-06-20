@@ -12,6 +12,8 @@ group :default do
   group :locomotive_cms do
     gem 'locomotive_cms', '~> 2.5.4', require: 'locomotive/engine'
     # gem 'locomotive_cms', github: 'locomotivecms/engine', branch: 'master', require: 'locomotive/engine'
+
+    gem 'liquids', github: 'bitaculous/liquids'
   end
 
   group :rack do
@@ -19,7 +21,7 @@ group :default do
   end
 
   group :management do
-    gem 'foreman', '~> 0.71.0'
+    gem 'foreman', '~> 0.74.0'
   end
 
   group :configuration do
