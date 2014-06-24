@@ -340,7 +340,7 @@ GEM
       rspec-expectations (~> 3.0.0)
       rspec-mocks (~> 3.0.0)
       rspec-support (~> 3.0.0)
-    rspec-support (3.0.1)
+    rspec-support (3.0.2)
     ruby-hmac (0.4.0)
     sanitize (2.0.3)
       nokogiri (>= 1.4.4, < 1.6)
