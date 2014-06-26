@@ -11,8 +11,8 @@ set :repo_url, 'https://github.com/bitaculous/locoroco.git'
 ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 set :keep_releases, 5
 
+# set :rvm_ruby_string, 'ruby-2.1.2-github@bitaculous-locoroco'
 # set :rvm_type, :system
-# set :rvm_ruby_string, 'ruby-2.1.2@bitaculous-locoroco'
 # set :rvm_path, '/usr/local/rvm'
 
 set :bundle_flags, '--deployment --quiet'
