@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/bitaculous/liquids.git
+  revision: 6883818344dfbcafd44d0d723011d4c17d3d1703
+  specs:
+    liquids (0.0.1)
+      locomotivecms-solid (~> 0.2.2.1)
+
+GIT
   remote: git://github.com/laserlemon/figaro.git
   revision: ae200e44e8f2770ce1037753865985b02ee0048f
   specs:
@@ -236,6 +243,9 @@ GEM
       sanitize (= 2.0.3)
       stringex (~> 2.0.3)
     locomotive_liquid (2.4.2)
+    locomotivecms-liquid (2.6.0)
+    locomotivecms-solid (0.2.2.1)
+      locomotivecms-liquid (~> 2.6.0)
     locomotivecms_solid (0.2.2)
       locomotive_liquid (~> 2.4.2)
     lumberjack (1.0.9)
@@ -384,6 +394,7 @@ DEPENDENCIES
   growl (~> 1.0.3)
   guard-rspec (~> 4.2.10)
   haml-rails (~> 0.4)
+  liquids!
   locomotive_cms (~> 2.5.4)
   meta_request (~> 0.3.0)
   nyan-cat-formatter (~> 0.9.0)
