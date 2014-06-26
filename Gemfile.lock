@@ -253,7 +253,7 @@ GEM
       locomotivecms-liquid (~> 2.6.0)
     locomotivecms_solid (0.2.2)
       locomotive_liquid (~> 2.4.2)
-    lumberjack (1.0.7)
+    lumberjack (1.0.9)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
