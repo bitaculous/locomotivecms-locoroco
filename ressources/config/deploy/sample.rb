@@ -1,5 +1,8 @@
 server 'foo', user: 'bar', roles: %w{web app db}
 
+set :environment, 'production'
+set :rails_env, fetch(:environment)
+
 set :deploy_to, "/var/www/#{fetch(:domain)}/#{fetch(:application)}"
 
 set :linked_files, %w{config/application.yml config/environments/<stage>.rb config/unicorn/<stage>.rb}
