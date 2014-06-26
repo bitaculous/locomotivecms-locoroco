@@ -7,4 +7,10 @@ require 'bundler/setup'
 
 require File.expand_path '../config/environment', __FILE__
 
+if defined?(Unicorn::HttpRequest)
+  require 'gctools/oobgc'
+
+  use GC::OOB::UnicornMiddleware
+end
+
 run Bitaculous::Locoroco::Application
