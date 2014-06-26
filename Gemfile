@@ -12,16 +12,6 @@ group :default do
   group :locomotive_cms do
     gem 'locomotive_cms', '~> 2.5.4', require: 'locomotive/engine'
     # gem 'locomotive_cms', github: 'locomotivecms/engine', branch: 'master', require: 'locomotive/engine'
-
-    gem 'liquids', github: 'bitaculous/liquids'
-  end
-
-  group :rack do
-    gem 'unicorn', '~> 4.8.3'
-  end
-
-  group :management do
-    gem 'foreman', '~> 0.74.0'
   end
 
   group :configuration do
@@ -31,6 +21,20 @@ group :default do
 
   group :templating do
     gem 'haml-rails', '~> 0.4'
+  end
+
+  group :rack do
+    gem 'unicorn', '~> 4.8.3', require: false
+  end
+
+  group :profiling do
+    gem 'gctools', '~> 0.2.3', require: false, platform: :mri_21
+
+    # gem 'rbtrace', '~> 0.4.4', require: false, platform: :mri
+
+    # gem 'stackprof', '~> 0.2.7', require: false, platform: :mri_21
+
+    # gem 'memory_profiler', '~> 0.0.4', require: false, platform: :mri_21
   end
 end
 
@@ -64,7 +68,7 @@ group :assets do
 
     gem 'uglifier', '~> 2.5.1'
 
-    gem 'therubyracer', '~> 0.12.1', platforms: :ruby
+    gem 'therubyracer', '~> 0.12.1'
   end
 
   group :stylesheets do
