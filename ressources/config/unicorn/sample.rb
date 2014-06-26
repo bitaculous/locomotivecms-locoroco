@@ -1,3 +1,6 @@
+# Enable out of band gc out of the box, it is low risk and improves perf a lot.
+ENV['UNICORN_ENABLE_OOBGC'] ||= '1'
+
 # Set your full path to application.
 app_path = '<path to application>/current'
 
