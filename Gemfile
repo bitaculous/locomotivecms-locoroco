@@ -4,9 +4,8 @@ source 'https://rubygems.org'
 
 group :default do
   group :rails do
-    # gem 'rails', '~> 3.2.18'
-
-    gem 'rails', github: 'rails/rails', branch: '3-2-stable'
+    gem 'rails', '~> 3.2.19'
+    # gem 'rails', github: 'rails/rails', branch: '3-2-stable'
   end
 
   group :locomotive_cms do
@@ -41,7 +40,7 @@ group :default do
 end
 
 group :development do
-  gem 'meta_request', '~> 0.3.0'
+  gem 'meta_request', '~> 0.3.3'
 
   gem 'better_errors', '~> 1.1.0'
 
@@ -55,7 +54,7 @@ group :development do
 end
 
 group :test do
-  gem 'nyan-cat-formatter', '~> 0.9.0'
+  gem 'nyan-cat-formatter', '~> 0.10.0'
 end
 
 group :development, :test do
@@ -78,10 +77,6 @@ group :assets do
 
     gem 'compass-rails', '~> 1.1.7'
   end
-
-  # group :sprockets do
-  #   gem 'turbo-sprockets-rails3', '~> 0.3.11'
-  # end
 end
 
 group :deployment do
