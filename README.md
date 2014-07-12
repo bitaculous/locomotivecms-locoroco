@@ -24,21 +24,20 @@ Requirements
 
 At [Bitaculous] we use the following stack to run [LocomotiveCMS], that's why this package is made for:
 
-* [Nginx](http://nginx.org "A free, open-source, high-performance HTTP server and reverse proxy")
-* [Unicorn](http://unicorn.bogomips.org "Rack HTTP server for fast clients and Unix")
-* [RVM](https://rvm.io "Ruby Version Manager")
-* [Bundler](http://bundler.io "The best way to manage a Ruby application's gems")
-* [Capistrano](http://capistranorb.com "A remote server automation and deployment tool written in Ruby.")
+* [Nginx]
+* [Unicorn]
+* [RVM]
+* [Bundler]
+* [Capistrano]
 
 Getting started
 ---------------
 
-1. Download the [LocoRoco master](https://github.com/bitaculous/locoroco/archive/master.zip "Download the LocoRoco master as a zip file")
-or a specific [release](https://github.com/bitaculous/locoroco/releases "LocoRoco releases") as a zip file
+1. Download the [LocoRoco master] or a specific [release]
 
-2. Unpack the zip file
+2. Unpack the file
 
-3. Install all dependencies with [Bundler](http://bundler.io "The best way to manage a Ruby application's gems"):
+3. Install all dependencies with Bundler:
 
     ```
     $ cd locoroco
@@ -49,13 +48,13 @@ or a specific [release](https://github.com/bitaculous/locoroco/releases "LocoRoc
 
     Copy `ressources/config/application.yml` to `config/application.yml` and adjust properly
 
-5. Start [Unicorn](http://unicorn.bogomips.org "Rack HTTP server for fast clients and Unix"):
+5. Start Unicorn:
 
     ```
     $ unicorn_rails
     ```
 
-That's it, [LocomotiveCMS](http://locomotivecms.com "An open source CMS for Rails") should run [on](http://0.0.0.0:8080 "LocomotiveCMS installation").
+That's it, LocoRoco should run [on].
 
 Deployment
 ----------
@@ -92,11 +91,9 @@ Deployment
     $ cap <stage> deploy:check
     ```
 
-5. Adjust [LocomotiveCMS](http://locomotivecms.com "An open source CMS for Rails") initializer
-(`config/initializers/locomotive.rb`).
+5. Adjust [LocomotiveCMS] initializer (`config/initializers/locomotive.rb`).
 
-6. Adjust [CarrierWave](https://github.com/carrierwaveuploader/carrierwave "Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks")
-initializer (`config/initializers/carrierwave.rb`) if assets are hosted on Amazon S3 (optional).
+6. Adjust [CarrierWave] initializer (`config/initializers/carrierwave.rb`) if assets are hosted on Amazon S3 (optional).
 
 7. Continue with `Regular deployment`
 
@@ -131,38 +128,48 @@ Configuration
 
 ### Nginx
 
-Take a look at `ressources/config/nginx/sample.conf` as an inspiration on how to configure [Nginx](http://nginx.org "A free, open-source, high-performance HTTP server and reverse proxy").
+Take a look at `ressources/config/nginx/sample.conf` as an inspiration on how to configure Nginx.
 
 Bug Reports
 -----------
 
 Github Issues are used for managing bug reports and feature requests. If you run into issues, please search the issues
-and submit new problems [here](https://github.com/bitaculous/locoroco/issues "Github Issues").
+and submit new problems [here].
 
 Versioning
 ----------
 
-This library aims to adhere to [Semantic Versioning 2.0.0][semver]. Violations of this scheme should be reported as bugs.
+This library aims to adhere to [Semantic Versioning 2.0.0]. Violations of this scheme should be reported as bugs.
 Specifically, if a minor or patch version is released that breaks backward compatibility, that version should be
 immediately yanked and / or a new version should be immediately released that restores compatibility.
-
-[semver]: http://semver.org
 
 License
 -------
 
-[LocoRoco](http://bitaculous.github.io/locoroco "A “ready to deploy” LocomotiveCMS package.") is released under the MIT
-License (MIT), see [LICENSE](https://raw.githubusercontent.com/bitaculous/locoroco/master/LICENSE "License").
+LocoRoco is released under the [MIT License (MIT)], see [LICENSE].
 
 [awesome]: http://www.locomotivecms.com/features "LocomotiveCMS features"
 [Bitaculous]: http://bitaculous.com "It's all about the bits, baby!"
+[Bundler]: http://bundler.io "The best way to manage a Ruby application's gems"
+[Capistrano]: http://capistranorb.com "A remote server automation and deployment tool written in Ruby."
+[CarrierWave]: https://github.com/carrierwaveuploader/carrierwave "Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks"
 [Gemnasium Status]: http://img.shields.io/gemnasium/bitaculous/locoroco.svg?style=flat "Gemnasium Status"
 [Gemnasium]: https://gemnasium.com/bitaculous/locoroco "LocoRoco at Gemnasium"
+[here]: https://github.com/bitaculous/locoroco/issues "Github Issues"
+[LICENSE]: https://raw.githubusercontent.com/bitaculous/locoroco/master/LICENSE "License"
 [LocomotiveCMS]: http://locomotivecms.com "An open source CMS for Rails"
 [LocomotiveHosting]: https://locomotivehosting.com "Host your LocomotiveCMS website here."
+[LocoRoco master]: https://github.com/bitaculous/locoroco/archive/master.zip "Download the LocoRoco master as a zip file"
 [LocoRoco]: http://bitaculous.github.io/locoroco "A “ready to deploy” LocomotiveCMS package."
+[MIT License (MIT)]: http://opensource.org/licenses/MIT "The MIT License (MIT)"
+[Nginx]: http://nginx.org "A free, open-source, high-performance HTTP server and reverse proxy"
+[on]: http://0.0.0.0:8080 "LocomotiveCMS installation"
+[release]: https://github.com/bitaculous/locoroco/releases "LocoRoco releases"
+[RVM]: https://rvm.io "Ruby Version Manager"
+[Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
 [Sony Computer Entertainment]: http://www.scei.co.jp/index_e.html "Sony Computer Entertainment"
 [team behind LocomotiveCMS]: http://locomotivecms.com/crew "The crew behind LocomotiveCMS"
 [The Real LocoRoco]: http://en.wikipedia.org/wiki/LocoRoco "LocoRoco"
 [Travis CI Status]: http://img.shields.io/travis/bitaculous/locoroco.svg?style=flat "Travis CI Status"
 [Travis CI]: https://travis-ci.org/bitaculous/locoroco "LocoRoco at Travis CI"
+[Unicorn]: http://unicorn.bogomips.org "Rack HTTP server for fast clients and Unix"
