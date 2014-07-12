@@ -91,7 +91,7 @@ Deployment
     $ cap <stage> deploy:check
     ```
 
-5. Adjust [LocomotiveCMS] initializer (`config/initializers/locomotive.rb`).
+5. Adjust LocomotiveCMS initializer (`config/initializers/locomotive.rb`).
 
 6. Adjust [CarrierWave] initializer (`config/initializers/carrierwave.rb`) if assets are hosted on Amazon S3 (optional).
 
