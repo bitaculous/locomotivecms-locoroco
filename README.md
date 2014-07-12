@@ -1,10 +1,10 @@
-[LocoRoco](http://bitaculous.github.io/locoroco "A “ready to deploy” LocomotiveCMS package.")
-=============================================================================================
+[LocoRoco]
+==========
 
-**A “ready to deploy” [LocomotiveCMS](http://locomotivecms.com "An open source CMS for Rails") package.**
+**A “ready to deploy” [LocomotiveCMS] package.**
 
-[![Travis CI Status](https://travis-ci.org/bitaculous/locoroco.svg)](http://travis-ci.org/bitaculous/locoroco)
-[![Gemnasium Status](https://gemnasium.com/bitaculous/locoroco.svg)](https://gemnasium.com/bitaculous/locoroco)
+[![Travis CI Status][Travis CI Status]][Travis CI]
+[![Gemnasium Status][Gemnasium Status]][Gemnasium]
 
 We at [Bitaculous](http://bitaculous.com "It's all about the bits, baby!") really like
 [LocomotiveCMS](http://locomotivecms.com "An open source CMS for Rails"), it's our favorite tool for developing websites,
@@ -160,3 +160,10 @@ License
 
 [LocoRoco](http://bitaculous.github.io/locoroco "A “ready to deploy” LocomotiveCMS package.") is released under the MIT
 License (MIT), see [LICENSE](https://raw.githubusercontent.com/bitaculous/locoroco/master/LICENSE "License").
+
+[Gemnasium Status]: http://img.shields.io/gemnasium/bitaculous/locoroco.svg?style=flat "Gemnasium Status"
+[Gemnasium]: https://gemnasium.com/bitaculous/locoroco "LocoRoco at Gemnasium"
+[LocomotiveCMS]: http://locomotivecms.com "An open source CMS for Rails"
+[LocoRoco]: http://bitaculous.github.io/locoroco "A “ready to deploy” LocomotiveCMS package."
+[Travis CI Status]: http://img.shields.io/travis/bitaculous/locoroco.svg?style=flat "Travis CI Status"
+[Travis CI]: https://travis-ci.org/bitaculous/locoroco "LocoRoco at Travis CI"
