@@ -6,30 +6,23 @@
 [![Travis CI Status][Travis CI Status]][Travis CI]
 [![Gemnasium Status][Gemnasium Status]][Gemnasium]
 
-We at [Bitaculous](http://bitaculous.com "It's all about the bits, baby!") really like
-[LocomotiveCMS](http://locomotivecms.com "An open source CMS for Rails"), it's our favorite tool for developing websites,
-it's [awesome](http://www.locomotivecms.com/features "LocomotiveCMS features"). That's why we built
-[LocoRoco](http://bitaculous.github.io/locoroco "A “ready to deploy” LocomotiveCMS package."), so you can easier start
-using [LocomotiveCMS](http://locomotivecms.com "An open source CMS for Rails") on your server.
+We at [Bitaculous] really like [LocomotiveCMS], it's our favorite tool for developing websites, it's [awesome]. That's
+why we built [LocoRoco], so you can easier start using [LocomotiveCMS] on your server.
 
-If you want to run [LocomotiveCMS](http://locomotivecms.com "An open source CMS for Rails") without setting up a server,
-check out [LocomotiveHosting](https://locomotivehosting.com "Host your LocomotiveCMS website here."), a hosting solution
-from the [team behind LocomotiveCMS](http://locomotivecms.com/crew "The crew behind LocomotiveCMS").
+If you want to run [LocomotiveCMS] without setting up a server, check out [LocomotiveHosting], a hosting solution from
+the [team behind LocomotiveCMS].
 
 Credits
 -------
 
-The [team behind LocomotiveCMS](http://locomotivecms.com/crew "The crew behind LocomotiveCMS") for creating
-[LocomotiveCMS](http://locomotivecms.com "An open source CMS for Rails").
+The [team behind LocomotiveCMS] for creating [LocomotiveCMS].
 
-[Sony Computer Entertainment](http://www.scei.co.jp/index_e.html "Sony Computer Entertainment") for creating
-[The Real LocoRoco](http://en.wikipedia.org/wiki/LocoRoco "LocoRoco"), an awesome platform video game.
+[Sony Computer Entertainment] for creating [The Real LocoRoco], an awesome platform video game.
 
 Requirements
 ------------
 
-At [Bitaculous](http://bitaculous.com "It's all about the bits, baby!") we use the following stack to run
-[LocomotiveCMS](http://locomotivecms.com "An open source CMS for Rails"), that's why this package is made for:
+At [Bitaculous] we use the following stack to run [LocomotiveCMS], that's why this package is made for:
 
 * [Nginx](http://nginx.org "A free, open-source, high-performance HTTP server and reverse proxy")
 * [Unicorn](http://unicorn.bogomips.org "Rack HTTP server for fast clients and Unix")
@@ -161,9 +154,15 @@ License
 [LocoRoco](http://bitaculous.github.io/locoroco "A “ready to deploy” LocomotiveCMS package.") is released under the MIT
 License (MIT), see [LICENSE](https://raw.githubusercontent.com/bitaculous/locoroco/master/LICENSE "License").
 
+[awesome]: http://www.locomotivecms.com/features "LocomotiveCMS features"
+[Bitaculous]: http://bitaculous.com "It's all about the bits, baby!"
 [Gemnasium Status]: http://img.shields.io/gemnasium/bitaculous/locoroco.svg?style=flat "Gemnasium Status"
 [Gemnasium]: https://gemnasium.com/bitaculous/locoroco "LocoRoco at Gemnasium"
 [LocomotiveCMS]: http://locomotivecms.com "An open source CMS for Rails"
+[LocomotiveHosting]: https://locomotivehosting.com "Host your LocomotiveCMS website here."
 [LocoRoco]: http://bitaculous.github.io/locoroco "A “ready to deploy” LocomotiveCMS package."
+[Sony Computer Entertainment]: http://www.scei.co.jp/index_e.html "Sony Computer Entertainment"
+[team behind LocomotiveCMS]: http://locomotivecms.com/crew "The crew behind LocomotiveCMS"
+[The Real LocoRoco]: http://en.wikipedia.org/wiki/LocoRoco "LocoRoco"
 [Travis CI Status]: http://img.shields.io/travis/bitaculous/locoroco.svg?style=flat "Travis CI Status"
 [Travis CI]: https://travis-ci.org/bitaculous/locoroco "LocoRoco at Travis CI"
