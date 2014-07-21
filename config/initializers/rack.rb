@@ -1,9 +1,9 @@
 Bitaculous::Locoroco::Application.configure do
   config.middleware.use Rack::Cors do
     allow do
-      origins '*'
+      origins 'sneak.bitaculous.com'
 
-      resource '/entry_submissions/*', headers: :any, methods: [:get, :post, :options]
+      resource '/entry_submissions/*', headers: :any, methods: [:post]
     end
   end
 end
