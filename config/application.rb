@@ -34,6 +34,16 @@ module Bitaculous
       # Enable escaping HTML in JSON.
       config.active_support.escape_html_entities_in_json = true
 
+      # === Middlewares ===
+
+      config.middleware.use Rack::Cors do
+        allow do
+          origins '*'
+
+          resource '*', headers: :any, methods: [:post]
+        end
+      end
+
       # === i18n ===
 
       # Set available locales.
