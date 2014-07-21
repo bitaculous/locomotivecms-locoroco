@@ -65,7 +65,7 @@ group :assets do
   group :javascripts do
     gem 'coffee-rails', '~> 3.2.2'
 
-    gem 'uglifier', '~> 2.5.1'
+    gem 'uglifier', '~> 2.5.3'
 
     gem 'therubyracer', '~> 0.12.1'
   end
@@ -82,7 +82,7 @@ group :deployment do
   gem 'capistrano-rvm',      '~> 0.1.1', require: false
   gem 'capistrano-bundler',  '~> 1.1.2', require: false
   gem 'capistrano-rails',    '~> 1.1.1', require: false
-  gem 'capistrano3-unicorn', '~> 0.1.1', require: false
+  gem 'capistrano3-unicorn', '~> 0.2.1', require: false
 end
 
 group :misc do
