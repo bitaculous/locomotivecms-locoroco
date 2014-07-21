@@ -25,6 +25,8 @@ group :default do
   end
 
   group :rack do
+    gem 'rack-cors', '~> 0.2.9', require: 'rack/cors'
+
     gem 'unicorn', '~> 4.8.3', require: false
   end
 
