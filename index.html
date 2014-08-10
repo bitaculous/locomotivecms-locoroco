@@ -125,7 +125,7 @@ $ bundle install
 
 <ol>
 <li><p>Check-in and push your changes</p></li>
-<li><p>Run <code>$ cap &lt;stage&gt; deploy</code> to deploy a new version to stage</p></li>
+<li><p>Run <code>cap &lt;stage&gt; deploy</code> to deploy a new version to the specified stage</p></li>
 </ol><h3>
 <a name="unicorn" class="anchor" href="#unicorn"><span class="octicon octicon-link"></span></a>Unicorn</h3>
 
@@ -139,7 +139,7 @@ $ bundle install
 <pre><code>$ cap &lt;stage&gt; unicorn:stop
 </code></pre>
 
-<p>Restart Unicorn (USR2 + QUIT); use this when <code>preload_app true</code></p>
+<p>Restart Unicorn (USR2 + QUIT)</p>
 
 <pre><code>$ cap &lt;stage&gt; unicorn:restart
 </code></pre>
@@ -150,7 +150,7 @@ $ bundle install
 <h3>
 <a name="nginx" class="anchor" href="#nginx"><span class="octicon octicon-link"></span></a>Nginx</h3>
 
-<p>Take a look at <code>ressources/config/nginx/sample.conf</code> as an inspiration on how to configure Nginx.</p>
+<p>Take a look at <a href="https://github.com/bitaculous/locoroco/blob/master/ressources/config/nginx/sample.conf" title="Nginx sample configuration">ressources/config/nginx/sample.conf</a> as an inspiration on how to configure Nginx.</p>
 
 <h2>
 <a name="code-status" class="anchor" href="#code-status"><span class="octicon octicon-link"></span></a>Code status</h2>
