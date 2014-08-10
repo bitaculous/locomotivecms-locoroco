@@ -40,27 +40,28 @@ group :default do
 end
 
 group :development do
-  gem 'meta_request', '~> 0.3.3'
+  gem 'meta_request', '~> 0.3.4', require: false
 
-  gem 'better_errors', '~> 1.1.0'
+  gem 'better_errors', '~> 1.1.0', require: false
 
   group :better_errors do
-    gem 'binding_of_caller', '~> 0.7.2'
+    gem 'binding_of_caller', '~> 0.7.2', require: false
   end
 
   group :guard do
-    gem 'guard-rspec', '~> 4.2.10'
+    gem 'guard-rspec', '~> 4.3.1', require: false
   end
 end
 
 group :test do
-  gem 'nyan-cat-formatter', '~> 0.10.0'
+  gem 'nyan-cat-formatter', '~> 0.10.0', require: false
 end
 
 group :development, :test do
-  gem 'spring', '~> 1.1.3'
+  gem 'rspec-rails', '~> 3.0.1', require: false
 
-  gem 'rspec-rails', '~> 3.0.1'
+  gem 'spring', '~> 1.1.3', require: false
+  gem 'spring-commands-rspec', '~> 1.0.2', require: false
 end
 
 group :assets do
@@ -80,9 +81,9 @@ group :assets do
 end
 
 group :deployment do
-  gem 'capistrano',          '~> 3.2.1'
+  gem 'capistrano',          '~> 3.2.1', require: false
   gem 'capistrano-rvm',      '~> 0.1.1', require: false
-  gem 'capistrano-bundler',  '~> 1.1.2', require: false
+  gem 'capistrano-bundler',  '~> 1.1.3', require: false
   gem 'capistrano-rails',    '~> 1.1.1', require: false
   gem 'capistrano3-unicorn', '~> 0.2.1', require: false
 end

@@ -101,7 +101,7 @@ Deployment
 
 1. Check-in and push your changes
 
-2. Run ```$ cap <stage> deploy``` to deploy a new version to stage
+2. Run ```cap <stage> deploy``` to deploy a new version to the specified stage
 
 ### Unicorn
 
@@ -117,7 +117,7 @@ Stop Unicorn (QUIT)
 $ cap <stage> unicorn:stop
 ```
 
-Restart Unicorn (USR2 + QUIT); use this when `preload_app true`
+Restart Unicorn (USR2 + QUIT)
 
 ```
 $ cap <stage> unicorn:restart
@@ -128,7 +128,7 @@ Configuration
 
 ### Nginx
 
-Take a look at `ressources/config/nginx/sample.conf` as an inspiration on how to configure Nginx.
+Take a look at [ressources/config/nginx/sample.conf] as an inspiration on how to configure Nginx.
 
 Bug reports
 -----------
@@ -165,6 +165,7 @@ LocoRoco is released under the [MIT License (MIT)], see [LICENSE].
 [Nginx]: http://nginx.org "A free, open-source, high-performance HTTP server and reverse proxy"
 [on]: http://0.0.0.0:8080 "LocomotiveCMS installation"
 [release]: https://github.com/bitaculous/locoroco/releases "LocoRoco releases"
+[ressources/config/nginx/sample.conf]: https://github.com/bitaculous/locoroco/blob/master/ressources/config/nginx/sample.conf "Nginx sample configuration"
 [RVM]: https://rvm.io "Ruby Version Manager"
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
 [Sony Computer Entertainment]: http://www.scei.co.jp/index_e.html "Sony Computer Entertainment"
