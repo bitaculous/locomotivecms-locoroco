@@ -128,7 +128,7 @@ Configuration
 
 ### Nginx
 
-Take a look at `[ressources/config/nginx/sample.conf]` as an inspiration on how to configure Nginx.
+Take a look at [ressources/config/nginx/sample.conf] as an inspiration on how to configure Nginx.
 
 Bug reports
 -----------
