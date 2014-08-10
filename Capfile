@@ -14,10 +14,6 @@ require 'capistrano/bundler'
 require 'capistrano/rails/assets'
 # require 'capistrano/rails/migrations'
 
-# Include tasks for Rails
-require 'capistrano/rails/assets'
-# require 'capistrano/rails/migrations'
-
 # Include tasks for Unicorn
 require 'capistrano3/unicorn'
 
