@@ -36,7 +36,13 @@ Locomotive.configure do |config|
   # Add the checksum of a theme asset at the end of its path to allow public caching. By default, it's disabled.
   config.theme_assets_checksum = true
 
+  # Enable serving of assets from an asset server.
+  # config.asset_host = 'http://assets.example.com'
+  # config.asset_host = -> (request, site) { ... }
+
   # Rack-cache settings, mainly used for the inline resizing image module.
+  #
+  # The default options are:
   #
   # config.rack_cache = {
   #   verbose:     true,
@@ -48,16 +54,11 @@ Locomotive.configure do |config|
   #
   # config.rack_cache = false
   #
-  # Note: by default, rack/cache is disabled on the Heroku platform.
-  config.rack_cache = {
-    metastore:   URI.encode("file:#{Rails.root}/tmp/dragonfly/cache/meta"), # URI encoded in case of spaces
-    entitystore: URI.encode("file:#{Rails.root}/tmp/dragonfly/cache/body"),
-    verbose:     true
-  }
+  # Note: by default, `rack/cache` is disabled on the Heroku platform.
 
-  # Configure the email address which will be shown in the DeviseMailer, NotificationMailer, etc. If you do not put the
-  # domain name in the email, LocomotiveCMS will take the default domain name depending on your deployment target (server,
-  # Heroku, Bushido, etc.).
+  # Configure the email address which will be shown in the `DeviseMailer`, `NotificationMailer`, etc. If you do not put
+  # the domain name in the email, LocomotiveCMS will take the default domain name depending on your deployment target
+  # (server, Heroku, Bushido, etc.).
   config.mailer_sender = 'support@bitaculous.com'
 
   # Tell if logs are enabled, useful for debug purpose.
