@@ -71,7 +71,7 @@ Deployment
 
     Copy `resources/config/unicorn/sample.rb` to `config/unicorn/<stage>.rb` and adjust properly
 
-2. Setup `shared` and `release` directory on stage:
+2. Setup `shared` and `releases` directory on stage:
 
     ```
     $ cap <stage> deploy:check:directories
