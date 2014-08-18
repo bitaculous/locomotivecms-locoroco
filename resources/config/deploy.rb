@@ -6,6 +6,8 @@ set :application, 'locoroco'
 
 set :linked_dirs, %w[log public/system public/sites tmp/cache tmp/pids tmp/sockets]
 
+set :linked_files, %W[config/application.yml config/environments/#{fetch(:environment)}.rb config/unicorn/#{fetch(:environment)}.rb]
+
 set :scm, :git
 set :repo_url, 'https://github.com/bitaculous/locoroco.git'
 ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
