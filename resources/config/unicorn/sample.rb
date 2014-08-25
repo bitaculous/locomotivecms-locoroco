@@ -2,7 +2,7 @@
 ENV['UNICORN_ENABLE_OOBGC'] ||= '1'
 
 # Set your full path to application.
-app_path = '<path to application>/current'
+app_path = '<PATH_TO_APPLICATION>/current'
 
 # Set application path as working directory. Help ensure the application will always spawn in the symlinked application
 # directory.
@@ -12,7 +12,7 @@ working_directory app_path
 preload_app true
 
 # Spawn master worker for user `unicorn` and group `foo.bar.com`.
-# user 'unicorn', 'foo.bar.com'
+# user '<USER>', '<GROUP>'
 
 # Use at least one worker per core if you're on a dedicated server, more will usually help for “short waits” on
 # databases / caches.

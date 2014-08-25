@@ -1,12 +1,12 @@
-server '<server>', user: '<user>', roles: %w[web app db]
+server '<SERVER>', user: '<USER>', roles: %w[web app db]
 
-set :environment, '<environment>'
+set :environment, '<ENVIRONMENT>'
 set :rails_env, fetch(:environment)
 
 set :deploy_to, "/var/www/#{fetch(:domain)}/#{fetch(:application)}"
 
 set :ssh_options, {
-  keys: '<identity_file>',
+  keys: '<IDENTITY_FILE>',
   auth_methods: %w[publickey],
   forward_agent: false
 }
