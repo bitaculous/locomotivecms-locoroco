@@ -1,16 +1,16 @@
 GIT
-  remote: git://github.com/laserlemon/figaro.git
-  revision: 9f54872dfc1a972b4a971211706272f0f38495f4
-  specs:
-    figaro (1.0.0.rc1)
-      thor (~> 0.14)
-
-GIT
   remote: git://github.com/bitaculous/liquids.git
   revision: 09ac7fb2dc0a7ff26242e038b00318cc9a94a8fc
   specs:
     liquids (0.0.1)
       locomotivecms-solid (~> 0.2.2.1)
+
+GIT
+  remote: git://github.com/laserlemon/figaro.git
+  revision: 9f54872dfc1a972b4a971211706272f0f38495f4
+  specs:
+    figaro (1.0.0.rc1)
+      thor (~> 0.14)
 
 GEM
   remote: https://rubygems.org/
