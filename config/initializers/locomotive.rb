@@ -31,7 +31,7 @@ Locomotive.configure do |config|
   # config.context_assign_extensions = {}
 
   # Add extra classes other than the defined content types among a site which will potentially used by templatized pages.
-  # config.models_for_templatization = %w(Product)
+  # config.models_for_templatization = %w[Product]
 
   # Add the checksum of a theme asset at the end of its path to allow public caching. By default, it's disabled.
   config.theme_assets_checksum = true
@@ -67,6 +67,6 @@ end
 
 Locomotive::ThemeAssetUploader.class_eval do
   def extension_white_list
-    %w(css eot flv gif htc ico jpeg jpg js otf pdf png psd svg swf ttf woff)
+    %w[css eot flv gif htc ico jpeg jpg js otf pdf png psd svg swf ttf woff]
   end
 end

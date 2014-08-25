@@ -1,21 +1,21 @@
-SECRET_TOKEN: "SECRET_TOKEN"
-COOKIE_STORE_KEY: "COOKIE_STORE_KEY"
+SECRET_TOKEN: "<SECRET_TOKEN>"
+COOKIE_STORE_KEY: "<COOKIE_STORE_KEY>"
 
-DRAGONFLY_SECRET: "DRAGONFLY_SECRET"
+DRAGONFLY_SECRET: "<DRAGONFLY_SECRET>"
 
 # Set timezone to a specified zone. Run `rake -D time` for a list of tasks for finding time zone names.
 # TIMEZONE: "UTC"
 
 development:
-  MONGODB_URI: mongodb://user:password@server:port_name/database"
+  MONGODB_URI: "mongodb://user:password@server:port_name/database"
 
 test:
-  MONGODB_URI: mongodb://user:password@server:port_name/database"
+  MONGODB_URI: "mongodb://user:password@server:port_name/database"
 
 production:
-  MONGODB_URI: mongodb://user:password@server:port_name/database"
+  MONGODB_URI: "mongodb://user:password@server:port_name/database"
 
   # If assets are hosted on Amazon S3:
-  # S3_KEY_ID: 'S3_KEY_ID'
-  # S3_SECRET_KEY: 'S3_SECRET_KEY'
-  # S3_BUCKET_REGION: 'S3_BUCKET_REGION'
+  # S3_KEY_ID: "<S3_KEY_ID>"
+  # S3_SECRET_KEY: "<S3_SECRET_KEY>"
+  # S3_BUCKET_REGION: "<S3_BUCKET_REGION>"

@@ -7,4 +7,4 @@ DRAGONFLY_SECRET: "d126b5c64017d7907dad5c191ab39867087a78c08e952754c271ce62b955b
 TIMEZONE: "Berlin"
 
 test:
-  MONGODB_URI: mongodb://127.0.0.1:27017/bitaculous-locoroco_test"
+  MONGODB_URI: "mongodb://127.0.0.1:27017/bitaculous-locoroco_test"
