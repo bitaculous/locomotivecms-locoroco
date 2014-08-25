@@ -40,7 +40,7 @@ end
 group :development do
   gem 'meta_request', '~> 0.3.4', require: false
 
-  gem 'better_errors', '~> 1.1.0', require: false
+  gem 'better_errors', '~> 2.0.0', require: false
 
   group :better_errors do
     gem 'binding_of_caller', '~> 0.7.2', require: false
