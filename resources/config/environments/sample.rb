@@ -4,6 +4,9 @@ Bitaculous::Locoroco::Application.configure do
   # Enable threaded mode.
   config.threadsafe!
 
+  # Code is not reloaded between requests.
+  config.cache_classes = true
+
   # Enable dependency loading for rake tasks.
   config.dependency_loading = true if $rails_rake_task
 
@@ -20,9 +23,6 @@ Bitaculous::Locoroco::Application.configure do
   # config.force_ssl = true
 
   # === Caching ===
-
-  # Code is not reloaded between requests.
-  config.cache_classes = true
 
   # Use a different cache store.
   # config.cache_store = :mem_cache_store
@@ -57,7 +57,7 @@ Bitaculous::Locoroco::Application.configure do
   # Use a different logger for distributed setups.
   # config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
 
-  # Set log level (default is `:info`).
+  # Set log level, use `:debug` to see everything in the log (default is `:info`).
   # config.log_level = :debug
 
   # Prepend all log lines with the following tags.
@@ -69,8 +69,9 @@ Bitaculous::Locoroco::Application.configure do
   # Show the logging configuration on STDOUT.
   config.show_log_configuration = false
 
-  # === Error notification ===
+  # === Misc ===
 
-  # Disable delivery errors, bad email addresses will be ignored.
+  # Ignore bad email addresses and do not raise email delivery errors. Set this to `true` and configure the email server
+  # for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
 end

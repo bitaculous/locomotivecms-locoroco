@@ -68,7 +68,7 @@ group :assets do
 
     gem 'uglifier', '~> 2.5.3'
 
-    gem 'therubyracer', '~> 0.12.1'
+    gem 'therubyracer', '~> 0.12.1', require: RUBY_PLATFORM.include?('linux') && 'v8'
   end
 
   group :stylesheets do
