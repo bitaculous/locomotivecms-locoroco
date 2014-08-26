@@ -39,25 +39,31 @@ group :default do
   end
 end
 
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0.1', require: false
+
+  group :preloader do
+    gem 'spring', '~> 1.1.3', require: false
+    gem 'spring-commands-rspec', '~> 1.0.2', require: false
+  end
+end
+
 group :development do
-  gem 'better_errors', '~> 2.0.0', require: false
-
-  gem 'binding_of_caller', '~> 0.7.2', require: false
-
   group :guard do
     gem 'guard-rspec', '~> 4.3.1', require: false
+  end
+
+  group :oops do
+    gem 'better_errors', '~> 2.0.0', require: false
+
+    gem 'binding_of_caller', '~> 0.7.2', require: false
   end
 end
 
 group :test do
-  gem 'nyan-cat-formatter', '~> 0.10.0', require: false
-end
-
-group :development, :test do
-  gem 'rspec-rails', '~> 3.0.1', require: false
-
-  gem 'spring', '~> 1.1.3', require: false
-  gem 'spring-commands-rspec', '~> 1.0.2', require: false
+  group :formatter do
+    gem 'nyan-cat-formatter', '~> 0.10.0', require: false
+  end
 end
 
 group :assets do
