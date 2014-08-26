@@ -12,9 +12,6 @@ group :spec do
     # Helpers
     watch(%r{^app/helpers/(.+)_(helper)\.rb$})         { ['spec/features', 'spec/helpers', 'spec/requests', 'spec/views'] }
 
-    # Serializers
-    watch(%r{^app/serializers/(.+)/.*\.rb$})           { ['spec/requests'] }
-
     # Views
     watch(%r{^app/views/(.+)/.*\.(erb|haml)$})         { |m| ["spec/features/#{m[1]}_spec.rb", "spec/requests/#{m[1]}_spec.rb", "spec/views/#{m[1]}_spec.rb"] }
 
@@ -24,10 +21,8 @@ group :spec do
     # Library
     watch(%r{^lib/(.+)\.rb$})                          { |m| "spec/lib/#{m[1]}_spec.rb" }
 
+    # Specs
     watch(%r{^spec/.+_spec\.rb$})
-
-    # Fabricator definitions
-    watch(%r{^spec/fabricators/(.+)\.rb$})             { 'spec' }
 
     # Shared examples
     watch(%r{^spec/shared/(.+)\.rb$})                  { 'spec' }
