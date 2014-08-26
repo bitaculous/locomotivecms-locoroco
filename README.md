@@ -40,7 +40,6 @@ Getting started
 3. Install all dependencies with Bundler:
 
     ```
-    $ cd locoroco
     $ bundle install
     ```
 

@@ -3,7 +3,9 @@ Dragonfly.app.configure do
          convert_command: `which convert`.strip.presence || '/usr/local/bin/convert',
          identify_command: `which identify`.strip.presence || '/usr/local/bin/identify'
 
-  protect_from_dos_attacks true
+  datastore :file,
+            root_path: Rails.root.join('public/system/dragonfly', Rails.env),
+            server_root: Rails.root.join('public')
 
   secret ENV['DRAGONFLY_SECRET']
 
@@ -12,8 +14,6 @@ Dragonfly.app.configure do
   fetch_file_whitelist /public/
 
   fetch_url_whitelist /.+/
-
-  # datastore :file, root_path: Rails.root.join('public/system/dragonfly', Rails.env), server_root: Rails.root.join('public')
 end
 
 Dragonfly.logger = Rails.logger
