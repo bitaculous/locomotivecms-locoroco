@@ -13,6 +13,10 @@ group :default do
     # gem 'locomotive_cms', github: 'locomotivecms/engine', branch: 'master', require: 'locomotive/engine'
   end
 
+  group :rack do
+    gem 'unicorn', '~> 4.8.3', require: false
+  end
+
   group :configuration do
     # gem 'figaro', '~> 0.7.0'
     gem 'figaro', github: 'laserlemon/figaro'
@@ -20,10 +24,6 @@ group :default do
 
   group :templating do
     gem 'haml-rails', '~> 0.4'
-  end
-
-  group :rack do
-    gem 'unicorn', '~> 4.8.3', require: false
   end
 
   group :profiling do
@@ -42,6 +42,7 @@ group :development, :test do
 
   group :preloader do
     gem 'spring', '~> 1.1.3', require: false
+
     gem 'spring-commands-rspec', '~> 1.0.2', require: false
   end
 end
