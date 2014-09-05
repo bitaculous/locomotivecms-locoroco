@@ -128,7 +128,7 @@ Configuration
 
 Take a look at [resources/config/nginx/sample.conf] as an inspiration on how to configure Nginx.
 
-Bug reports
+Bug Reports
 -----------
 
 Github Issues are used for managing bug reports and feature requests. If you run into issues, please search the issues
