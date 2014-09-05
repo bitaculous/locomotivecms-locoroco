@@ -47,11 +47,10 @@ the <a href="http://locomotivecms.com/crew" title="The crew behind LocomotiveCMS
 <p>At <a href="http://bitaculous.com" title="It's all about the bits, baby!">Bitaculous</a> we use the following stack to run <a href="http://locomotivecms.com" title="An open source CMS for Rails">LocomotiveCMS</a>, that's why this package is made for:</p>
 
 <ul>
-<li><a href="http://nginx.org" title="A free, open-source, high-performance HTTP server and reverse proxy">Nginx</a></li>
-<li><a href="http://unicorn.bogomips.org" title="Rack HTTP server for fast clients and Unix">Unicorn</a></li>
-<li><a href="https://rvm.io" title="Ruby Version Manager">RVM</a></li>
-<li><a href="http://bundler.io" title="The best way to manage a Ruby application's gems">Bundler</a></li>
 <li><a href="http://capistranorb.com" title="A remote server automation and deployment tool written in Ruby.">Capistrano</a></li>
+<li><a href="http://nginx.com" title="A free, open-source, high-performance HTTP server and reverse proxy">Nginx</a></li>
+<li><a href="https://rvm.io" title="Ruby Version Manager">RVM</a></li>
+<li><a href="http://unicorn.bogomips.org" title="Rack HTTP server for fast clients and Unix">Unicorn</a></li>
 </ul><h2>
 <a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting started</h2>
 
@@ -59,16 +58,15 @@ the <a href="http://locomotivecms.com/crew" title="The crew behind LocomotiveCMS
 <li><p>Download the <a href="https://github.com/bitaculous/locoroco/archive/master.zip" title="Download the LocoRoco master as a zip file">LocoRoco master</a> or a specific <a href="https://github.com/bitaculous/locoroco/releases" title="LocoRoco releases">release</a></p></li>
 <li><p>Unpack the file</p></li>
 <li>
-<p>Install all dependencies with Bundler:</p>
+<p>Install all dependencies with <a href="http://bundler.io" title="The best way to manage a Ruby application's gems">Bundler</a>:</p>
 
-<pre><code>$ cd locoroco
-$ bundle install
+<pre><code>$ bundle install
 </code></pre>
 </li>
 <li>
 <p>Create the application configuration:</p>
 
-<p>Copy <code>ressources/config/application.yml</code> to <code>config/application.yml</code> and adjust properly</p>
+<p>Copy <code>resources/config/application.yml</code> to <code>config/application.yml</code> and adjust properly</p>
 </li>
 <li>
 <p>Start Unicorn:</p>
@@ -88,16 +86,16 @@ $ bundle install
 <li>
 <p>Create configurations:</p>
 
-<p>Copy <code>ressources/config/deploy.rb</code> to <code>config/deploy.rb</code> and adjust properly</p>
+<p>Copy <code>resources/config/deploy.rb</code> to <code>config/deploy.rb</code> and adjust properly</p>
 
-<p>Copy <code>ressources/config/environments/sample.rb</code> to <code>config/environments/&lt;stage&gt;.rb</code> and adjust properly</p>
+<p>Copy <code>resources/config/environments/sample.rb</code> to <code>config/environments/&lt;stage&gt;.rb</code> and adjust properly</p>
 
-<p>Copy <code>ressources/config/deploy/sample.rb</code> to <code>config/deploy/&lt;stage&gt;.rb</code> and adjust properly</p>
+<p>Copy <code>resources/config/deploy/sample.rb</code> to <code>config/deploy/&lt;stage&gt;.rb</code> and adjust properly</p>
 
-<p>Copy <code>ressources/config/unicorn/sample.rb</code> to <code>config/unicorn/&lt;stage&gt;.rb</code> and adjust properly</p>
+<p>Copy <code>resources/config/unicorn/sample.rb</code> to <code>config/unicorn/&lt;stage&gt;.rb</code> and adjust properly</p>
 </li>
 <li>
-<p>Setup <code>shared</code> and <code>release</code> directory on stage:</p>
+<p>Setup <code>shared</code> and <code>releases</code> directory on stage:</p>
 
 <pre><code>$ cap &lt;stage&gt; deploy:check:directories
 </code></pre>
@@ -150,16 +148,16 @@ $ bundle install
 <h3>
 <a name="nginx" class="anchor" href="#nginx"><span class="octicon octicon-link"></span></a>Nginx</h3>
 
-<p>Take a look at <a href="https://github.com/bitaculous/locoroco/blob/master/ressources/config/nginx/sample.conf" title="Nginx sample configuration">ressources/config/nginx/sample.conf</a> as an inspiration on how to configure Nginx.</p>
+<p>Take a look at <a href="https://github.com/bitaculous/locoroco/blob/master/resources/config/nginx/sample.conf" title="Nginx sample configuration">resources/config/nginx/sample.conf</a> as an inspiration on how to configure Nginx.</p>
 
 <h2>
-<a name="code-status" class="anchor" href="#code-status"><span class="octicon octicon-link"></span></a>Code status</h2>
+<a name="code-status" class="anchor" href="#code-status"><span class="octicon octicon-link"></span></a>Code Status</h2>
 
 <p><a href="https://travis-ci.org/bitaculous/locoroco" title="LocoRoco at Travis CI"><img src="http://img.shields.io/travis/bitaculous/locoroco.svg?style=flat" alt="Travis CI Status" title="Travis CI Status"></a>
 <a href="https://gemnasium.com/bitaculous/locoroco" title="LocoRoco at Gemnasium"><img src="http://img.shields.io/gemnasium/bitaculous/locoroco.svg?style=flat" alt="Gemnasium Status" title="Gemnasium Status"></a></p>
 
 <h2>
-<a name="bug-reports" class="anchor" href="#bug-reports"><span class="octicon octicon-link"></span></a>Bug reports</h2>
+<a name="bug-reports" class="anchor" href="#bug-reports"><span class="octicon octicon-link"></span></a>Bug Reports</h2>
 
 <p>Github Issues are used for managing bug reports and feature requests. If you run into issues, please search the issues
 and submit new problems <a href="https://github.com/bitaculous/locoroco/issues" title="Github Issues">here</a>.</p>
