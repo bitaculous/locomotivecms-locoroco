@@ -24,11 +24,10 @@ Requirements
 
 At [Bitaculous] we use the following stack to run [LocomotiveCMS], that's why this package is made for:
 
-* [Nginx]
-* [Unicorn]
-* [RVM]
-* [Bundler]
 * [Capistrano]
+* [Nginx]
+* [RVM]
+* [Unicorn]
 
 Getting started
 ---------------
@@ -37,7 +36,7 @@ Getting started
 
 2. Unpack the file
 
-3. Install all dependencies with Bundler:
+3. Install all dependencies with [Bundler]:
 
     ```
     $ bundle install
@@ -129,7 +128,7 @@ Configuration
 
 Take a look at [resources/config/nginx/sample.conf] as an inspiration on how to configure Nginx.
 
-Bug reports
+Bug Reports
 -----------
 
 Github Issues are used for managing bug reports and feature requests. If you run into issues, please search the issues
@@ -152,8 +151,8 @@ LocoRoco is released under the [MIT License (MIT)], see [LICENSE].
 [Bundler]: http://bundler.io "The best way to manage a Ruby application's gems"
 [Capistrano]: http://capistranorb.com "A remote server automation and deployment tool written in Ruby."
 [CarrierWave]: https://github.com/carrierwaveuploader/carrierwave "Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks"
-[Gemnasium Status]: http://img.shields.io/gemnasium/bitaculous/locoroco.svg?style=flat "Gemnasium Status"
 [Gemnasium]: https://gemnasium.com/bitaculous/locoroco "LocoRoco at Gemnasium"
+[Gemnasium Status]: http://img.shields.io/gemnasium/bitaculous/locoroco.svg?style=flat "Gemnasium Status"
 [here]: https://github.com/bitaculous/locoroco/issues "Github Issues"
 [LICENSE]: https://raw.githubusercontent.com/bitaculous/locoroco/master/LICENSE "License"
 [LocomotiveCMS]: http://locomotivecms.com "An open source CMS for Rails"
@@ -161,7 +160,7 @@ LocoRoco is released under the [MIT License (MIT)], see [LICENSE].
 [LocoRoco master]: https://github.com/bitaculous/locoroco/archive/master.zip "Download the LocoRoco master as a zip file"
 [LocoRoco]: http://bitaculous.github.io/locoroco "A “ready to deploy” LocomotiveCMS package."
 [MIT License (MIT)]: http://opensource.org/licenses/MIT "The MIT License (MIT)"
-[Nginx]: http://nginx.org "A free, open-source, high-performance HTTP server and reverse proxy"
+[Nginx]: http://nginx.com "A free, open-source, high-performance HTTP server and reverse proxy"
 [on]: http://0.0.0.0:8080 "LocomotiveCMS installation"
 [release]: https://github.com/bitaculous/locoroco/releases "LocoRoco releases"
 [resources/config/nginx/sample.conf]: https://github.com/bitaculous/locoroco/blob/master/resources/config/nginx/sample.conf "Nginx sample configuration"
@@ -170,6 +169,6 @@ LocoRoco is released under the [MIT License (MIT)], see [LICENSE].
 [Sony Computer Entertainment]: http://www.scei.co.jp/index_e.html "Sony Computer Entertainment"
 [team behind LocomotiveCMS]: http://locomotivecms.com/crew "The crew behind LocomotiveCMS"
 [The Real LocoRoco]: http://en.wikipedia.org/wiki/LocoRoco "LocoRoco"
-[Travis CI Status]: http://img.shields.io/travis/bitaculous/locoroco.svg?style=flat "Travis CI Status"
 [Travis CI]: https://travis-ci.org/bitaculous/locoroco "LocoRoco at Travis CI"
+[Travis CI Status]: http://img.shields.io/travis/bitaculous/locoroco.svg?style=flat "Travis CI Status"
 [Unicorn]: http://unicorn.bogomips.org "Rack HTTP server for fast clients and Unix"
