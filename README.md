@@ -63,11 +63,11 @@ Deployment
 
     Copy [resources/config/deploy.rb] to `config/deploy.rb` and adjust properly
 
-    Copy `resources/config/environments/sample.rb` to `config/environments/<stage>.rb` and adjust properly
+    Copy [resources/config/environments/sample.rb] to `config/environments/<stage>.rb` and adjust properly
 
-    Copy `resources/config/deploy/sample.rb` to `config/deploy/<stage>.rb` and adjust properly
+    Copy [resources/config/deploy/sample.rb] to `config/deploy/<stage>.rb` and adjust properly
 
-    Copy `resources/config/unicorn/sample.rb` to `config/unicorn/<stage>.rb` and adjust properly
+    Copy [resources/config/unicorn/sample.rb] to `config/unicorn/<stage>.rb` and adjust properly
 
 2. Setup `shared` and `releases` directory on stage:
 
@@ -89,9 +89,9 @@ Deployment
     $ cap <stage> deploy:check
     ```
 
-5. Adjust LocomotiveCMS initializer (`config/initializers/locomotive.rb`).
+5. Adjust LocomotiveCMS initializer ([config/initializers/locomotive.rb]).
 
-6. Adjust [CarrierWave] initializer (`config/initializers/carrierwave.rb`) if assets are hosted on Amazon S3 (optional).
+6. Adjust [CarrierWave] initializer ([config/initializers/carrierwave.rb]) if assets are hosted on Amazon S3 (optional).
 
 7. Continue with `Regular deployment`
 
@@ -151,21 +151,26 @@ LocoRoco is released under the [MIT License (MIT)], see [LICENSE].
 [Bundler]: http://bundler.io "The best way to manage a Ruby application's gems"
 [Capistrano]: http://capistranorb.com "A remote server automation and deployment tool written in Ruby."
 [CarrierWave]: https://github.com/carrierwaveuploader/carrierwave "Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks"
+[config/initializers/carrierwave.rb]: https://github.com/bitaculous/locoroco/blob/master/config/initializers/carrierwave.rb "CarrierWave initializer"
+[config/initializers/locomotive.rb]: https://github.com/bitaculous/locoroco/blob/master/config/initializers/locomotive.rb "LocomotiveCMS initializer"
 [Gemnasium]: https://gemnasium.com/bitaculous/locoroco "LocoRoco at Gemnasium"
 [Gemnasium Status]: http://img.shields.io/gemnasium/bitaculous/locoroco.svg?style=flat "Gemnasium Status"
 [here]: https://github.com/bitaculous/locoroco/issues "Github Issues"
 [LICENSE]: https://raw.githubusercontent.com/bitaculous/locoroco/master/LICENSE "License"
 [LocomotiveCMS]: http://locomotivecms.com "An open source CMS for Rails"
 [LocomotiveHosting]: https://locomotivehosting.com "Host your LocomotiveCMS website here."
-[LocoRoco master]: https://github.com/bitaculous/locoroco/archive/master.zip "Download the LocoRoco master as a zip file"
 [LocoRoco]: http://bitaculous.github.io/locoroco "A “ready to deploy” LocomotiveCMS package."
+[LocoRoco master]: https://github.com/bitaculous/locoroco/archive/master.zip "Download the LocoRoco master as a zip file"
 [MIT License (MIT)]: http://opensource.org/licenses/MIT "The MIT License (MIT)"
 [Nginx]: http://nginx.com "A free, open-source, high-performance HTTP server and reverse proxy"
 [on]: http://0.0.0.0:8080 "LocomotiveCMS installation"
 [release]: https://github.com/bitaculous/locoroco/releases "LocoRoco releases"
 [resources/config/application.yml]: https://github.com/bitaculous/locoroco/blob/master/resources/config/application.yml "Application configuration"
 [resources/config/deploy.rb]: https://github.com/bitaculous/locoroco/blob/master/resources/config/deploy.rb "Deploy configuration"
-[resources/config/nginx/sample.conf]: https://github.com/bitaculous/locoroco/blob/master/resources/config/nginx/sample.conf "Nginx sample configuration"
+[resources/config/deploy/sample.rb]: https://github.com/bitaculous/locoroco/blob/master/resources/config/deploy/sample.rb "Deploy configuration (sample)"
+[resources/config/environments/sample.rb]: https://github.com/bitaculous/locoroco/blob/master/resources/config/environments/sample.rb "Environment configuration (sample)"
+[resources/config/nginx/sample.conf]: https://github.com/bitaculous/locoroco/blob/master/resources/config/nginx/sample.conf "Nginx configuration (sample)"
+[resources/config/unicorn/sample.rb]: https://github.com/bitaculous/locoroco/blob/master/resources/config/unicorn/sample.rb "Unicorn configuration (sample)"
 [RVM]: https://rvm.io "Ruby Version Manager"
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
 [Sony Computer Entertainment]: http://www.scei.co.jp/index_e.html "Sony Computer Entertainment"
