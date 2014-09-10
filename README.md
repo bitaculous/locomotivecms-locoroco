@@ -61,7 +61,7 @@ Deployment
 
 1. Create configurations:
 
-    Copy `resources/config/deploy.rb` to `config/deploy.rb` and adjust properly
+    Copy `[resources/config/deploy.rb]` to `config/deploy.rb` and adjust properly
 
     Copy `resources/config/environments/sample.rb` to `config/environments/<stage>.rb` and adjust properly
 
@@ -163,6 +163,7 @@ LocoRoco is released under the [MIT License (MIT)], see [LICENSE].
 [Nginx]: http://nginx.com "A free, open-source, high-performance HTTP server and reverse proxy"
 [on]: http://0.0.0.0:8080 "LocomotiveCMS installation"
 [release]: https://github.com/bitaculous/locoroco/releases "LocoRoco releases"
+[resources/config/deploy.rb]: https://github.com/bitaculous/locoroco/blob/master/resources/config/deploy.rb "Deploy sample configuration"
 [resources/config/nginx/sample.conf]: https://github.com/bitaculous/locoroco/blob/master/resources/config/nginx/sample.conf "Nginx sample configuration"
 [RVM]: https://rvm.io "Ruby Version Manager"
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
