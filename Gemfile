@@ -8,7 +8,7 @@ group :default do
     # gem 'rails', github: 'rails/rails', branch: '3-2-stable'
   end
 
- group :locomotive_cms do
+  group :locomotive_cms do
     # gem 'locomotive_cms', '~> 2.5.5', require: 'locomotive/engine'
     # gem 'locomotive_cms', github: 'locomotivecms/engine', branch: 'master', require: 'locomotive/engine'
     gem 'locomotive_cms', github: 'locomotivecms/engine', branch: 'v2.5.x', require: 'locomotive/engine'
