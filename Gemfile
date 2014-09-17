@@ -8,9 +8,10 @@ group :default do
     # gem 'rails', github: 'rails/rails', branch: '3-2-stable'
   end
 
-  group :locomotive_cms do
-    gem 'locomotive_cms', '~> 2.5.5', require: 'locomotive/engine'
+ group :locomotive_cms do
+    # gem 'locomotive_cms', '~> 2.5.5', require: 'locomotive/engine'
     # gem 'locomotive_cms', github: 'locomotivecms/engine', branch: 'master', require: 'locomotive/engine'
+    gem 'locomotive_cms', github: 'locomotivecms/engine', branch: 'v2.5.x', require: 'locomotive/engine'
 
     gem 'liquids', github: 'bitaculous/liquids'
   end
@@ -78,7 +79,7 @@ group :assets do
   group :stylesheets do
     gem 'sass-rails', '~> 3.2.6'
 
-    gem 'compass-rails', '~> 1.1.7'
+    gem 'compass-rails', '~> 2.0.0'
   end
 end
 

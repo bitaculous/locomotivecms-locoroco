@@ -5,7 +5,6 @@ set :domain, 'bitaculous.com'
 set :application, 'locoroco'
 
 set :linked_dirs, %w[log public/system public/sites tmp/cache tmp/pids tmp/sockets]
-set :linked_files, %w[config/application.yml]
 
 set :scm, :git
 set :repo_url, 'https://github.com/bitaculous/locoroco.git'
