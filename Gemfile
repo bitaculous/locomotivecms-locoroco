@@ -18,8 +18,7 @@ group :default do
   end
 
   group :configuration do
-    # gem 'figaro', '~> 0.7.0'
-    gem 'figaro', github: 'laserlemon/figaro'
+    gem 'figaro', '~> 1.0.0'
   end
 
   group :templating do
@@ -38,7 +37,7 @@ group :default do
 end
 
 group :development, :test do
-  gem 'rspec-rails', '~> 3.0.1', require: false
+  gem 'rspec-rails', '~> 3.1.0', require: false
 
   group :preloader do
     gem 'spring', '~> 1.1.3', require: false
@@ -61,7 +60,7 @@ end
 
 group :test do
   group :formatter do
-    gem 'nyan-cat-formatter', '~> 0.10.0', require: false
+    gem 'nyan-cat-formatter', '~> 0.10.1', require: false
   end
 end
 
@@ -85,7 +84,7 @@ group :deployment do
   gem 'capistrano',          '~> 3.2.1', require: false
   gem 'capistrano-rvm',      '~> 0.1.1', require: false
   gem 'capistrano-bundler',  '~> 1.1.3', require: false
-  gem 'capistrano-rails',    '~> 1.1.1', require: false
+  gem 'capistrano-rails',    '~> 1.1.2', require: false
   gem 'capistrano3-unicorn', '~> 0.2.1', require: false
 end
 
