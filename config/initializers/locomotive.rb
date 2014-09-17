@@ -10,12 +10,12 @@ Locomotive.configure do |config|
     multi_sites.reserved_subdomains = %w[locoroco]
   end
 
-  # Default locale (for now, only `bg`, `cs`, `de`, `en`, `fr`, `it`, `ja`, `nb`, `pl`, `pt-BR`, `sk` and `zh-CN` are
-  # supported)
+  # Set default locale (`bg`, `cs`, `de`, `en`, `es`, `et`, `fr`, `it`, `ja`, `nb`, `nl`, `pl`, `pt-BR`, `pt`, `ru`,
+  # `sk`, `sr` or `zh-CN`are supported)
   config.default_locale = :en
 
   # Available locales suggested to “localize“ a site. You will have to pick up at least one among that list:
-  # `bg`, `cs`, `de`, `en`, `fr`, `it`, `ja`, `nb`, `pl`, `pt-BR`, `sk`, `sr` or `zh-CN`.
+  # `bg`, `cs`, `de`, `en`, `es`, `et`, `fr`, `it`, `ja`, `nb`, `nl`, `pl`, `pt-BR`, `pt`, `ru`, `sk`, `sr` or `zh-CN`.
   config.site_locales = %w[en de]
 
   # Force all access to the back-office over SSL in production.
