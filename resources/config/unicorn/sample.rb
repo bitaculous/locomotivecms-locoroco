@@ -4,11 +4,17 @@ APP_PATH = File.expand_path '../../../', __FILE__
 # directory that Capistrano sets up.
 working_directory APP_PATH
 
+# Spawn master worker for user `<user>` and group `<group>`.
+# user '<user>', '<group>'
+
 # Preload application, this loads the application in the master process before forking worker processes.
 preload_app true
 
-# Spawn master worker for user `unicorn` and group `foo.bar.com`.
-# user 'unicorn', 'foo.bar.com'
+# Enable this flag to have unicorn test client connections by writing the beginning of the HTTP headers before calling
+# the application. This prevents calling the application for connections that have disconnected while queued. This is
+# only guaranteed to detect clients on the same host unicorn runs on, and unlikely to detect disconnects even on a fast
+# LAN.
+check_client_connection false
 
 # Use at least one worker per core if you're on a dedicated server, more will usually help for “short waits” on
 # databases / caches.
@@ -30,12 +36,6 @@ pid "#{APP_PATH}/tmp/pids/unicorn.pid"
 # stderr, so prevent them from going to `/dev/null` and log everything to one file.
 stdout_path "#{APP_PATH}/log/unicorn.log"
 stderr_path "#{APP_PATH}/log/unicorn.log"
-
-# Enable this flag to have unicorn test client connections by writing the beginning of the HTTP headers before calling
-# the application. This prevents calling the application for connections that have disconnected while queued. This is
-# only guaranteed to detect clients on the same host unicorn runs on, and unlikely to detect disconnects even on a fast
-# LAN.
-check_client_connection false
 
 before_exec do |server|
   # Enable Out-Of-Band garbage collector (OobGC) out of the box, it is low risk and improves performance a lot.
