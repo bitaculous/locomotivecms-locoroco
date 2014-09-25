@@ -84,10 +84,14 @@ group :assets do
 end
 
 group :deployment do
-  gem 'capistrano',          '~> 3.2.1', require: false
-  gem 'capistrano-rvm',      '~> 0.1.1', require: false
-  gem 'capistrano-bundler',  '~> 1.1.3', require: false
-  gem 'capistrano-rails',    '~> 1.1.2', require: false
+  gem 'capistrano', '~> 3.2.1', require: false
+
+  gem 'capistrano-rvm', '~> 0.1.1', require: false
+
+  gem 'capistrano-bundler', '~> 1.1.3', require: false
+
+  gem 'capistrano-rails', '~> 1.1.2', require: false
+
   gem 'capistrano3-unicorn', '~> 0.2.1', require: false
 end
 
