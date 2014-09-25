@@ -4,8 +4,8 @@ APP_PATH = File.expand_path '../../../', __FILE__
 # directory that Capistrano sets up.
 working_directory APP_PATH
 
-# Spawn master worker for user `<user>` and group `<group>`.
-# user '<user>', '<group>'
+# Spawn master worker for user `<USER>` and group `<GROUP>`.
+# user '<USER>', '<GROUP>'
 
 # Preload application, this loads the application in the master process before forking worker processes.
 preload_app true
