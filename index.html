@@ -58,18 +58,18 @@ the <a href="http://locomotivecms.com/crew" title="The crew behind LocomotiveCMS
 <li><p>Download the <a href="https://github.com/bitaculous/locoroco/archive/master.zip" title="Download the LocoRoco master as a zip file">LocoRoco master</a> or a specific <a href="https://github.com/bitaculous/locoroco/releases" title="LocoRoco releases">release</a></p></li>
 <li><p>Unpack the file</p></li>
 <li>
-<p>Install all dependencies with <a href="http://bundler.io" title="The best way to manage a Ruby application's gems">Bundler</a>:</p>
+<p>Install all dependencies with <a href="http://bundler.io" title="The best way to manage a Ruby application's gems">Bundler</a></p>
 
 <pre><code>$ bundle install
 </code></pre>
 </li>
 <li>
-<p>Create the application configuration:</p>
+<p>Create the application configuration</p>
 
-<p>Copy <code>resources/config/application.yml</code> to <code>config/application.yml</code> and adjust properly</p>
+<p>Copy <a href="https://github.com/bitaculous/locoroco/blob/master/resources/config/application.yml" title="Application configuration">resources/config/application.yml</a> to <code>config/application.yml</code> and adjust properly</p>
 </li>
 <li>
-<p>Start Unicorn:</p>
+<p>Start Unicorn</p>
 
 <pre><code>$ unicorn_rails
 </code></pre>
@@ -84,24 +84,24 @@ the <a href="http://locomotivecms.com/crew" title="The crew behind LocomotiveCMS
 
 <ol>
 <li>
-<p>Create configurations:</p>
+<p>Create configurations</p>
 
-<p>Copy <code>resources/config/deploy.rb</code> to <code>config/deploy.rb</code> and adjust properly</p>
+<p>Copy <a href="https://github.com/bitaculous/locoroco/blob/master/resources/config/deploy.rb" title="Deploy configuration">resources/config/deploy.rb</a> to <code>config/deploy.rb</code> and adjust properly</p>
 
-<p>Copy <code>resources/config/environments/sample.rb</code> to <code>config/environments/&lt;stage&gt;.rb</code> and adjust properly</p>
+<p>Copy <a href="https://github.com/bitaculous/locoroco/blob/master/resources/config/environments/sample.rb" title="Environment configuration (sample)">resources/config/environments/sample.rb</a> to <code>config/environments/&lt;stage&gt;.rb</code> and adjust properly</p>
 
-<p>Copy <code>resources/config/deploy/sample.rb</code> to <code>config/deploy/&lt;stage&gt;.rb</code> and adjust properly</p>
+<p>Copy <a href="https://github.com/bitaculous/locoroco/blob/master/resources/config/deploy/sample.rb" title="Deploy configuration (sample)">resources/config/deploy/sample.rb</a> to <code>config/deploy/&lt;stage&gt;.rb</code> and adjust properly</p>
 
-<p>Copy <code>resources/config/unicorn/sample.rb</code> to <code>config/unicorn/&lt;stage&gt;.rb</code> and adjust properly</p>
+<p>Copy <a href="https://github.com/bitaculous/locoroco/blob/master/resources/config/unicorn/sample.rb" title="Unicorn configuration (sample)">resources/config/unicorn/sample.rb</a> to <code>config/unicorn/&lt;stage&gt;.rb</code> and adjust properly</p>
 </li>
 <li>
-<p>Setup <code>shared</code> and <code>releases</code> directory on stage:</p>
+<p>Setup <code>shared</code> and <code>releases</code> directory on stage</p>
 
 <pre><code>$ cap &lt;stage&gt; deploy:check:directories
 </code></pre>
 </li>
 <li>
-<p>Copy configurations to stage:</p>
+<p>Copy configurations to stage</p>
 
 <p>Copy <code>config/application.yml</code> to <code>~shared/config/application.yml</code> (on stage)</p>
 
@@ -110,13 +110,13 @@ the <a href="http://locomotivecms.com/crew" title="The crew behind LocomotiveCMS
 <p>Copy <code>config/unicorn/&lt;stage&gt;.rb</code> to <code>~shared/config/unicorn/&lt;stage&gt;.rb</code> (on stage)</p>
 </li>
 <li>
-<p>Check that the required files and directories exist on stage:</p>
+<p>Check that the required files and directories exist on stage</p>
 
 <pre><code>$ cap &lt;stage&gt; deploy:check
 </code></pre>
 </li>
-<li><p>Adjust LocomotiveCMS initializer (<code>config/initializers/locomotive.rb</code>).</p></li>
-<li><p>Adjust <a href="https://github.com/carrierwaveuploader/carrierwave" title="Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks">CarrierWave</a> initializer (<code>config/initializers/carrierwave.rb</code>) if assets are hosted on Amazon S3 (optional).</p></li>
+<li><p>Adjust LocomotiveCMS initializer (<a href="https://github.com/bitaculous/locoroco/blob/master/config/initializers/locomotive.rb" title="LocomotiveCMS initializer">config/initializers/locomotive.rb</a>).</p></li>
+<li><p>Adjust <a href="https://github.com/carrierwaveuploader/carrierwave" title="Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks">CarrierWave</a> initializer (<a href="https://github.com/bitaculous/locoroco/blob/master/config/initializers/carrierwave.rb" title="CarrierWave initializer">config/initializers/carrierwave.rb</a>) if assets are hosted on Amazon S3 (optional).</p></li>
 <li><p>Continue with <code>Regular deployment</code></p></li>
 </ol><h3>
 <a name="regular-deployment" class="anchor" href="#regular-deployment"><span class="octicon octicon-link"></span></a>Regular deployment</h3>
@@ -148,7 +148,7 @@ the <a href="http://locomotivecms.com/crew" title="The crew behind LocomotiveCMS
 <h3>
 <a name="nginx" class="anchor" href="#nginx"><span class="octicon octicon-link"></span></a>Nginx</h3>
 
-<p>Take a look at <a href="https://github.com/bitaculous/locoroco/blob/master/resources/config/nginx/sample.conf" title="Nginx sample configuration">resources/config/nginx/sample.conf</a> as an inspiration on how to configure Nginx.</p>
+<p>Take a look at <a href="https://github.com/bitaculous/locoroco/blob/master/resources/config/nginx/sample.conf" title="Nginx configuration (sample)">resources/config/nginx/sample.conf</a> as an inspiration on how to configure Nginx.</p>
 
 <h2>
 <a name="code-status" class="anchor" href="#code-status"><span class="octicon octicon-link"></span></a>Code Status</h2>
