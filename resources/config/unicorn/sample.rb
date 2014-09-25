@@ -37,11 +37,6 @@ pid "#{APP_PATH}/tmp/pids/unicorn.pid"
 stdout_path "#{APP_PATH}/log/unicorn.log"
 stderr_path "#{APP_PATH}/log/unicorn.log"
 
-before_exec do |server|
-  # Enable Out-Of-Band garbage collector (OobGC) out of the box, it is low risk and improves performance a lot.
-  ENV['UNICORN_ENABLE_OOBGC'] ||= '1'
-end
-
 before_fork do |server, worker|
   # The following is only recommended for memory / DB-constrained installations. It is not needed if your system can
   # house twice as many worker processes as you have configured.
