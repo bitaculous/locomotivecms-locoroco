@@ -1,33 +1,15 @@
-# Ignore Sublime workspace configurations
-*.sublime-workspace
-
-# Ignore Bundler configuration
-.bundle
-
-# Ignore Sass cache
-.sass-cache
-
-# Ignore Bundler stubs
-bin
-
-# Ignore deploy configuration(s)
-config/deploy/*.rb
-
-# Ignore environment configuration(s)
-config/environments/*.rb
-
-# Ignore unicorn configuration(s)
-config/unicorn/*.rb
-
-# Ignore application configuration
-config/application.yml
-
-# Ignore deploy configuration
-config/deploy.rb
-
-# Ignore generated assets
-public/assets
-
-# Ignore all log and temporary files
-log/*.log
-tmp
+/.bundle/
+/.sass-cache/
+/assets_manifest.yml
+/bin/
+/config/application.yml
+/config/deploy.rb
+/config/deploy/*.rb
+/config/environments/*.rb
+/config/unicorn/*.rb
+/locoroco.sublime-workspace
+/log/
+/public/assets/
+/public/system/
+/REVISION
+/tmp/
