@@ -36,17 +36,17 @@ Getting started
 
 2. Unpack the file
 
-3. Install all dependencies with [Bundler]:
+3. Install all dependencies with [Bundler]
 
     ```
     $ bundle install
     ```
 
-4. Create the application configuration:
+4. Create the application configuration
 
     Copy [resources/config/application.yml] to `config/application.yml` and adjust properly
 
-5. Start Unicorn:
+5. Start Unicorn
 
     ```
     $ unicorn_rails
@@ -59,7 +59,7 @@ Deployment
 
 ### First deployment
 
-1. Create configurations:
+1. Create configurations
 
     Copy [resources/config/deploy.rb] to `config/deploy.rb` and adjust properly
 
@@ -69,13 +69,13 @@ Deployment
 
     Copy [resources/config/unicorn/sample.rb] to `config/unicorn/<stage>.rb` and adjust properly
 
-2. Setup `shared` and `releases` directory on stage:
+2. Setup `shared` and `releases` directory on stage
 
     ```
     $ cap <stage> deploy:check:directories
     ```
 
-3. Copy configurations to stage:
+3. Copy configurations to stage
 
     Copy `config/application.yml` to `~shared/config/application.yml` (on stage)
 
@@ -83,7 +83,7 @@ Deployment
 
     Copy `config/unicorn/<stage>.rb` to `~shared/config/unicorn/<stage>.rb` (on stage)
 
-4. Check that the required files and directories exist on stage:
+4. Check that the required files and directories exist on stage
 
     ```
     $ cap <stage> deploy:check

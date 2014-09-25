@@ -1,13 +1,13 @@
-# Ignore sublime workspace files
+# Ignore Sublime workspace configurations
 *.sublime-workspace
 
-# Ignore bundler configuration
+# Ignore Bundler configuration
 .bundle
 
-# Ignore sass cache
+# Ignore Sass cache
 .sass-cache
 
-# Ignore bundler stubs
+# Ignore Bundler stubs
 bin
 
 # Ignore deploy configuration(s)
