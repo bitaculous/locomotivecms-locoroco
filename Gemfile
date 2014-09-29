@@ -54,7 +54,7 @@ group :development do
 
   gem 'guard-rspec', '~> 4.3.1', require: false
 
-  # === Oops ===
+  # === Ooops! ===
 
   gem 'better_errors', '~> 2.0.0', require: false
 
@@ -74,7 +74,7 @@ group :assets do
 
   gem 'compass-rails', '~> 2.0.0'
 
-  # === Javascript ===
+  # === JavaScript ===
 
   gem 'coffee-rails', '~> 3.2.2'
 
