@@ -3,87 +3,91 @@
 source 'https://rubygems.org'
 
 group :default do
-  group :rails do
-    gem 'rails', '~> 3.2.19'
-    # gem 'rails', github: 'rails/rails', branch: '3-2-stable'
-  end
+  # === Ruby on Rails ===
 
-  group :locomotive_cms do
-    # gem 'locomotive_cms', '~> 2.5.5', require: 'locomotive/engine'
-    # gem 'locomotive_cms', github: 'locomotivecms/engine', branch: 'master', require: 'locomotive/engine'
-    gem 'locomotive_cms', github: 'locomotivecms/engine', branch: 'v2.5.x', require: 'locomotive/engine'
+  gem 'rails', '~> 3.2.19'
+  # gem 'rails', github: 'rails/rails', branch: '3-2-stable'
 
-    gem 'liquids', github: 'bitaculous/liquids'
-  end
+  # === LocomotiveCMS ===
 
-  group :rack do
-    gem 'unicorn', '~> 4.8.3', require: false
-  end
+  gem 'locomotive_cms', '~> 2.5.6', require: 'locomotive/engine'
+  # gem 'locomotive_cms', github: 'locomotivecms/engine', branch: 'master', require: 'locomotive/engine'
+  # gem 'locomotive_cms', github: 'locomotivecms/engine', branch: 'v2.5.x', require: 'locomotive/engine'
 
-  group :configuration do
-    gem 'figaro', '~> 1.0.0'
-  end
+  gem 'liquids', github: 'bitaculous/liquids'
 
-  group :templating do
-    gem 'haml-rails', '~> 0.4'
-  end
+  # === Rack ===
 
-  group :profiling do
-    gem 'gctools', '~> 0.2.3', require: false, platform: :mri_21
+  gem 'unicorn', '~> 4.8.3', require: false
 
-    # gem 'rbtrace', '~> 0.4.4', require: false, platform: :mri
+  # === Configuration ===
 
-    # gem 'stackprof', '~> 0.2.7', require: false, platform: :mri_21
+  gem 'figaro', '~> 1.0.0'
 
-    # gem 'memory_profiler', '~> 0.0.4', require: false, platform: :mri_21
-  end
+  # === Templating ===
+
+  gem 'haml-rails', '~> 0.4'
+
+  # === Profiling ===
+
+  gem 'gctools', '~> 0.2.3', require: false, platform: :mri_21
+
+  # gem 'rbtrace', '~> 0.4.4', require: false, platform: :mri
+
+  # gem 'stackprof', '~> 0.2.7', require: false, platform: :mri_21
+
+  # gem 'memory_profiler', '~> 0.0.4', require: false, platform: :mri_21
 end
 
 group :development, :test do
+  # === RSpec ===
+
   gem 'rspec-rails', '~> 3.1.0', require: false
 
-  group :preloader do
-    gem 'spring', '~> 1.1.3', require: false
+  # === Preloader ===
 
-    gem 'spring-commands-rspec', '~> 1.0.2', require: false
-  end
+  gem 'spring', '~> 1.1.3', require: false
+
+  gem 'spring-commands-rspec', '~> 1.0.2', require: false
 end
 
 group :development do
-  group :guard do
-    gem 'guard-rspec', '~> 4.3.1', require: false
-  end
+  # === Guard ===
 
-  group :oops do
-    gem 'better_errors', '~> 2.0.0', require: false
+  gem 'guard-rspec', '~> 4.3.1', require: false
 
-    gem 'binding_of_caller', '~> 0.7.2', require: false
-  end
+  # === Oops ===
+
+  gem 'better_errors', '~> 2.0.0', require: false
+
+  gem 'binding_of_caller', '~> 0.7.2', require: false
 end
 
 group :test do
-  group :formatter do
-    gem 'nyan-cat-formatter', '~> 0.10.1', require: false
-  end
+  # === Formatter ===
+
+  gem 'nyan-cat-formatter', '~> 0.10.1', require: false
 end
 
 group :assets do
-  group :javascripts do
-    gem 'coffee-rails', '~> 3.2.2'
+  # === Cascading Style Sheets ===
 
-    gem 'uglifier', '~> 2.5.3'
+  gem 'sass-rails', '~> 3.2.6'
 
-    gem 'therubyracer', '~> 0.12.1', require: RUBY_PLATFORM.include?('linux') && 'v8'
-  end
+  gem 'compass-rails', '~> 2.0.0'
 
-  group :stylesheets do
-    gem 'sass-rails', '~> 3.2.6'
+  # === Javascript ===
 
-    gem 'compass-rails', '~> 2.0.0'
-  end
+  gem 'coffee-rails', '~> 3.2.2'
+
+  gem 'uglifier', '~> 2.5.3'
+
+  gem 'therubyracer', '~> 0.12.1', require: RUBY_PLATFORM.include?('linux') && 'v8'
 end
 
 group :deployment do
+  # === Capistrano ===
+
   gem 'capistrano', '~> 3.2.1', require: false
 
   gem 'capistrano-rvm', '~> 0.1.1', require: false
@@ -96,9 +100,9 @@ group :deployment do
 end
 
 group :misc do
-  group :osx do
-    gem 'growl', '~> 1.0.3', require: RUBY_PLATFORM.include?('darwin') && 'growl'
+  # === OS X ===
 
-    gem 'rb-fsevent', '~> 0.9.4', require: RUBY_PLATFORM.include?('darwin') && 'rb-fsevent'
-  end
+  gem 'growl', '~> 1.0.3', require: RUBY_PLATFORM.include?('darwin') && 'growl'
+
+  gem 'rb-fsevent', '~> 0.9.4', require: RUBY_PLATFORM.include?('darwin') && 'rb-fsevent'
 end
