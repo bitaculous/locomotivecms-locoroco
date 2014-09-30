@@ -67,6 +67,6 @@ end
 
 Locomotive::ThemeAssetUploader.class_eval do
   def extension_white_list
-    %w[css eot flv gif htc ico jpeg jpg js otf pdf png psd svg swf ttf woff]
+    %w[css eot flv gif htc ico jpeg jpg js otf pdf png psd svg swf ttf woff woff2]
   end
 end
