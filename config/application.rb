@@ -57,9 +57,6 @@ module Bitaculous
       # already added).
       # config.assets.precompile += %w[foo.js bar.css]
 
-      # Version of your assets, change this if you want to expire all your assets.
-      config.assets.version = '1.0'
-
       # === Logging ===
 
       # Configure sensitive parameters which will be filtered from the log file.

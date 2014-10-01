@@ -70,6 +70,8 @@ group :test do
 end
 
 group :assets do
+  gem 'turbo-sprockets-rails3', '~> 0.3.14'
+
   # === Cascading Style Sheets ===
 
   gem 'sass-rails', '~> 3.2.6'
