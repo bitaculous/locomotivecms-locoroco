@@ -37,9 +37,9 @@ Locomotive.configure do |config|
   config.theme_assets_checksum = true
 
   # Enable serving of assets from an asset server.
-  # config.asset_host = 'https://assets.example.com'
+  # config.asset_host = 'https://locoroco-assets.bitaculous.com'
   # config.asset_host = -> (request, site) {
-  #   'https://assets%d.example.com' % (request.hash % 4)
+  #   'https://locoroco-assets%d.bitaculous.com' % (request.hash % 4)
   # }
   config.asset_host = 'https://locoroco-assets.bitaculous.com'
 
