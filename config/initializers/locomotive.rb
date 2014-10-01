@@ -19,7 +19,7 @@ Locomotive.configure do |config|
   config.site_locales = %w[en de]
 
   # Force all access to the back-office over SSL in production.
-  # config.enable_admin_ssl = Rails.env.production?
+  config.enable_admin_ssl = Rails.env.production?
 
   # “Public” forms can be protected from Cross-Site Request Forgery (CSRF) attacks. By default, that protection is
   # disabled in order to keep backwards compatibility with the existing public forms. Note: we strongly recommend to
@@ -39,6 +39,7 @@ Locomotive.configure do |config|
   # Enable serving of assets from an asset server.
   # config.asset_host = 'http://assets.example.com'
   # config.asset_host = -> (request, site) { ... }
+  config.asset_host = '//locoroco-assets.bitaculous.com'
 
   # Rack-cache settings, mainly used for the inline resizing image module.
   #
