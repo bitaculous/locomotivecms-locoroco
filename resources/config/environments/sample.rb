@@ -45,12 +45,23 @@ Bitaculous::Locoroco::Application.configure do
   # `locoroco.assets0.bitaculous.com`, `locoroco.assets1.bitaculous.com`, etc.
   # config.action_controller.asset_host = '//locoroco.assets%d.bitaculous.com'
 
-  # Defaults to nil and saved in location specified by `config.assets.prefix`.
-  # config.assets.manifest = YOUR_PATH
-
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = 'X-Sendfile' # For Apache HTTP Server
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # For Nginx
+
+  # Version of your assets, change this if you want to expire all your assets.
+  config.assets.version = '1.0'
+
+  # Defines the full path to be used for the asset precompiler's manifest file. Defaults to a randomly-generated filename
+  # in the `config.assets.prefix` directory within the `public` folder.
+  # config.assets.manifest = 'YOUR_PATH'
+
+  # Make sure that asset modification times are updated properly before `assets:precompile`, so that the `clean_expired`
+  # task knows which assets are safe to remove.
+  config.assets.handle_expiration = true
+
+  # Configure the expiry time.
+  # config.assets.expire_after 2.weeks
 
   # === Logging ===
 
