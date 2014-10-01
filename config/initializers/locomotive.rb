@@ -19,7 +19,7 @@ Locomotive.configure do |config|
   config.site_locales = %w[en de]
 
   # Force all access to the back-office over SSL in production.
-  config.enable_admin_ssl = Rails.env.production?
+  config.require_ssl = Rails.env.production?
 
   # “Public” forms can be protected from Cross-Site Request Forgery (CSRF) attacks. By default, that protection is
   # disabled in order to keep backwards compatibility with the existing public forms. Note: we strongly recommend to
