@@ -54,7 +54,7 @@ Bitaculous::Locoroco::Application.configure do
 
   # Defines the full path to be used for the asset precompiler's manifest file. Defaults to a randomly-generated filename
   # in the `config.assets.prefix` directory within the `public` folder.
-  # config.assets.manifest = 'YOUR_PATH'
+  # config.assets.manifest = '<PATH_TO_MANIFEST>'
 
   # Make sure that asset modification times are updated properly before `assets:precompile`, so that the `clean_expired`
   # task knows which assets are safe to remove.
