@@ -74,7 +74,7 @@ group :assets do
 
   gem 'sass-rails', '~> 3.2.6'
 
-  gem 'compass-rails', '~> 2.0.0'
+  gem 'compass-rails', '~> 2.0.1'
 
   # === JavaScript ===
 
