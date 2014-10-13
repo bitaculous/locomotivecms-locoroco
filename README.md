@@ -7,22 +7,22 @@
 [![Gemnasium Status][Gemnasium Status]][Gemnasium]
 
 We at [Bitaculous] really like [LocomotiveCMS], it's our favorite tool for developing websites, it's [awesome]. That's
-why we built [LocoRoco], so you can easier start using [LocomotiveCMS] on your server.
+why we built LocoRoco, so you can easier start using LocomotiveCMS on your server.
 
-If you want to run [LocomotiveCMS] without setting up a server, check out [LocomotiveHosting], a hosting solution from
-the [team behind LocomotiveCMS].
+**If you want to run LocomotiveCMS without setting up a server, check out [LocomotiveHosting], a first class hosting
+solution from the [team behind LocomotiveCMS]. This also [supports the development] of LocomotiveCMS.**
 
 Credits
 -------
 
-The [team behind LocomotiveCMS] for creating [LocomotiveCMS].
+The [team behind LocomotiveCMS] for creating LocomotiveCMS.
 
 [Sony Computer Entertainment] for creating [The Real LocoRoco], an awesome platform video game.
 
 Requirements
 ------------
 
-At [Bitaculous] we use the following stack to run [LocomotiveCMS], that's why this package is made for:
+At Bitaculous we use the following stack to run LocomotiveCMS, that's why this package is made for:
 
 * [Capistrano]
 * [Nginx]
@@ -174,6 +174,7 @@ LocoRoco is released under the [MIT License (MIT)], see [LICENSE].
 [RVM]: https://rvm.io "Ruby Version Manager"
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
 [Sony Computer Entertainment]: http://www.scei.co.jp/index_e.html "Sony Computer Entertainment"
+[supports the development]: http://www.locomotivecms.com/articles/we-tried-to-solve-the-open-source-revenue-equation "We tried to solve the open-source revenue equation. We failed."
 [team behind LocomotiveCMS]: http://locomotivecms.com/crew "The crew behind LocomotiveCMS"
 [The Real LocoRoco]: http://en.wikipedia.org/wiki/LocoRoco "LocoRoco"
 [Travis CI]: https://travis-ci.org/bitaculous/locoroco "LocoRoco at Travis CI"
