@@ -29,29 +29,31 @@
       </header>
       <section>
         <p>We at <a href="http://bitaculous.com" title="It's all about the bits, baby!">Bitaculous</a> really like <a href="http://locomotivecms.com" title="An open source CMS for Rails">LocomotiveCMS</a>, it's our favorite tool for developing websites, it's <a href="http://www.locomotivecms.com/features" title="LocomotiveCMS features">awesome</a>. That's
-why we built <a href="http://bitaculous.github.io/locoroco" title="A “ready to deploy” LocomotiveCMS package.">LocoRoco</a>, so you can easier start using <a href="http://locomotivecms.com" title="An open source CMS for Rails">LocomotiveCMS</a> on your server.</p>
+why we built LocoRoco, so you can easier start using LocomotiveCMS on your server.</p>
 
-<p>If you want to run <a href="http://locomotivecms.com" title="An open source CMS for Rails">LocomotiveCMS</a> without setting up a server, check out <a href="https://locomotivehosting.com" title="Host your LocomotiveCMS website here.">LocomotiveHosting</a>, a hosting solution from
-the <a href="http://locomotivecms.com/crew" title="The crew behind LocomotiveCMS">team behind LocomotiveCMS</a>.</p>
+<p><strong>If you want to run LocomotiveCMS without setting up a server, check out <a href="https://locomotivehosting.com" title="Host your LocomotiveCMS website here.">LocomotiveHosting</a>, a first class hosting
+solution from the <a href="http://locomotivecms.com/crew" title="The crew behind LocomotiveCMS">team behind LocomotiveCMS</a>. This also <a href="http://www.locomotivecms.com/articles/we-tried-to-solve-the-open-source-revenue-equation" title="We tried to solve the open-source revenue equation. We failed.">supports the development</a> of LocomotiveCMS.</strong></p>
 
 <h2>
 <a name="credits" class="anchor" href="#credits"><span class="octicon octicon-link"></span></a>Credits</h2>
 
-<p>The <a href="http://locomotivecms.com/crew" title="The crew behind LocomotiveCMS">team behind LocomotiveCMS</a> for creating <a href="http://locomotivecms.com" title="An open source CMS for Rails">LocomotiveCMS</a>.</p>
+<p>The <a href="http://locomotivecms.com/crew" title="The crew behind LocomotiveCMS">team behind LocomotiveCMS</a> for creating LocomotiveCMS.</p>
 
 <p><a href="http://www.scei.co.jp/index_e.html" title="Sony Computer Entertainment">Sony Computer Entertainment</a> for creating <a href="http://en.wikipedia.org/wiki/LocoRoco" title="LocoRoco">The Real LocoRoco</a>, an awesome platform video game.</p>
 
 <h2>
 <a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
 
-<p>At <a href="http://bitaculous.com" title="It's all about the bits, baby!">Bitaculous</a> we use the following stack to run <a href="http://locomotivecms.com" title="An open source CMS for Rails">LocomotiveCMS</a>, that's why this package is made for:</p>
+<p>At Bitaculous we use the following stack to run LocomotiveCMS, that's why this package is made for:</p>
 
 <ul>
 <li><a href="http://capistranorb.com" title="A remote server automation and deployment tool written in Ruby.">Capistrano</a></li>
 <li><a href="http://nginx.com" title="A free, open-source, high-performance HTTP server and reverse proxy">Nginx</a></li>
 <li><a href="https://rvm.io" title="Ruby Version Manager">RVM</a></li>
 <li><a href="http://unicorn.bogomips.org" title="Rack HTTP server for fast clients and Unix">Unicorn</a></li>
-</ul><h2>
+</ul>
+
+<h2>
 <a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting started</h2>
 
 <ol>
@@ -74,7 +76,9 @@ the <a href="http://locomotivecms.com/crew" title="The crew behind LocomotiveCMS
 <pre><code>$ unicorn_rails
 </code></pre>
 </li>
-</ol><p>That's it, LocoRoco should run <a href="http://0.0.0.0:8080" title="LocomotiveCMS installation">on</a>.</p>
+</ol>
+
+<p>That's it, LocoRoco should run <a href="http://0.0.0.0:8080" title="LocomotiveCMS installation">on</a>.</p>
 
 <h2>
 <a name="deployment" class="anchor" href="#deployment"><span class="octicon octicon-link"></span></a>Deployment</h2>
@@ -118,13 +122,17 @@ the <a href="http://locomotivecms.com/crew" title="The crew behind LocomotiveCMS
 <li><p>Adjust LocomotiveCMS initializer (<a href="https://github.com/bitaculous/locoroco/blob/master/config/initializers/locomotive.rb" title="LocomotiveCMS initializer">config/initializers/locomotive.rb</a>).</p></li>
 <li><p>Adjust <a href="https://github.com/carrierwaveuploader/carrierwave" title="Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks">CarrierWave</a> initializer (<a href="https://github.com/bitaculous/locoroco/blob/master/config/initializers/carrierwave.rb" title="CarrierWave initializer">config/initializers/carrierwave.rb</a>) if assets are hosted on Amazon S3 (optional).</p></li>
 <li><p>Continue with <code>Regular deployment</code></p></li>
-</ol><h3>
+</ol>
+
+<h3>
 <a name="regular-deployment" class="anchor" href="#regular-deployment"><span class="octicon octicon-link"></span></a>Regular deployment</h3>
 
 <ol>
 <li><p>Check-in and push your changes</p></li>
 <li><p>Run <code>cap &lt;stage&gt; deploy</code> to deploy a new version to the specified stage</p></li>
-</ol><h3>
+</ol>
+
+<h3>
 <a name="unicorn" class="anchor" href="#unicorn"><span class="octicon octicon-link"></span></a>Unicorn</h3>
 
 <p>Start Unicorn</p>
