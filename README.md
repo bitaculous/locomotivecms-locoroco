@@ -101,6 +101,9 @@ Deployment
 
 2. Run ```cap <stage> deploy``` to deploy a new version to the specified stage
 
+Tasks
+-----
+
 ### Unicorn
 
 Start Unicorn
@@ -119,6 +122,32 @@ Restart Unicorn (USR2 + QUIT)
 
 ```
 $ cap <stage> unicorn:restart
+```
+
+### Misc
+
+Clear sessions, cache, and socket files from `tmp`
+
+```
+$ cap <stage> cake task=tmp:clear
+```
+
+Clear sessions
+
+```
+$ cap <stage> cake task=tmp:sessions:clear
+```
+
+Clear cache
+
+```
+$ cap <stage> cake task=tmp:cache:clear
+```
+
+Clear sockets
+
+```
+$ cap <stage> cake task=tmp:sockets:clear
 ```
 
 Configuration
