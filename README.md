@@ -150,9 +150,6 @@ Clear sockets
 $ cap <stage> cake task=tmp:sockets:clear
 ```
 
-Deployment
-----------
-
 Configuration
 -------------
 
