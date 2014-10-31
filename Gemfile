@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 group :default do
   # === Ruby on Rails ===
 
-  gem 'rails', '~> 3.2.19'
+  gem 'rails', '~> 3.2.20'
   # gem 'rails', github: 'rails/rails', branch: '3-2-stable'
 
   # === LocomotiveCMS ===
