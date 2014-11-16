@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/bitaculous/liquids.git
-  revision: e6358fe7881807d6083bccbd09b4ae17579b9b00
+  revision: 6190654a8dece6260d65f1687f24574329184e4b
   specs:
-    liquids (1.4.0)
+    liquids (1.4.1)
       locomotivecms-solid (~> 0.2.2.1)
 
 GEM
