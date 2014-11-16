@@ -1,7 +1,10 @@
 language: ruby
 rvm:
-  - 2.1.4
+  - 2.1.5
 services:
   - mongodb
 before_script:
   - cp resources/config/application.ci.yml config/application.yml
+branches:
+  except:
+    - gh-pages
