@@ -28,21 +28,21 @@
         </ul>
       </header>
       <section>
-        <p>We at <a href="http://bitaculous.com" title="It's all about the bits, baby!">Bitaculous</a> really like <a href="http://locomotivecms.com" title="An open source CMS for Rails">LocomotiveCMS</a>, it's our favorite tool for developing websites, it's <a href="http://www.locomotivecms.com/features" title="LocomotiveCMS features">awesome</a>. That's
+        <p>We at <a href="https://bitaculous.com" title="It's all about the bits, baby!">Bitaculous</a> really like <a href="http://locomotivecms.com" title="An open source CMS for Rails">LocomotiveCMS</a>, it's our favorite tool for developing websites, it's <a href="http://www.locomotivecms.com/features" title="LocomotiveCMS features">awesome</a>. That's
 why we built LocoRoco, so you can easier start using LocomotiveCMS on your server.</p>
 
 <p><strong>If you want to run LocomotiveCMS without setting up a server, check out <a href="https://locomotivehosting.com" title="Host your LocomotiveCMS website here.">LocomotiveHosting</a>, a first class hosting
 solution from the <a href="http://locomotivecms.com/crew" title="The crew behind LocomotiveCMS">team behind LocomotiveCMS</a>. This also <a href="http://www.locomotivecms.com/articles/we-tried-to-solve-the-open-source-revenue-equation" title="We tried to solve the open-source revenue equation. We failed.">supports the development</a> of LocomotiveCMS.</strong></p>
 
 <h2>
-<a name="credits" class="anchor" href="#credits"><span class="octicon octicon-link"></span></a>Credits</h2>
+<a id="credits" class="anchor" href="#credits" aria-hidden="true"><span class="octicon octicon-link"></span></a>Credits</h2>
 
 <p>The <a href="http://locomotivecms.com/crew" title="The crew behind LocomotiveCMS">team behind LocomotiveCMS</a> for creating LocomotiveCMS.</p>
 
 <p><a href="http://www.scei.co.jp/index_e.html" title="Sony Computer Entertainment">Sony Computer Entertainment</a> for creating <a href="http://en.wikipedia.org/wiki/LocoRoco" title="LocoRoco">The Real LocoRoco</a>, an awesome platform video game.</p>
 
 <h2>
-<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h2>
 
 <p>At Bitaculous we use the following stack to run LocomotiveCMS, that's why this package is made for:</p>
 
@@ -54,7 +54,7 @@ solution from the <a href="http://locomotivecms.com/crew" title="The crew behind
 </ul>
 
 <h2>
-<a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting started</h2>
+<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting started</h2>
 
 <ol>
 <li><p>Download the <a href="https://github.com/bitaculous/locoroco/archive/master.zip" title="Download the LocoRoco master as a zip file">LocoRoco master</a> or a specific <a href="https://github.com/bitaculous/locoroco/releases" title="LocoRoco releases">release</a></p></li>
@@ -81,10 +81,10 @@ solution from the <a href="http://locomotivecms.com/crew" title="The crew behind
 <p>That's it, LocoRoco should run <a href="http://0.0.0.0:8080" title="LocomotiveCMS installation">on</a>.</p>
 
 <h2>
-<a name="deployment" class="anchor" href="#deployment"><span class="octicon octicon-link"></span></a>Deployment</h2>
+<a id="deployment" class="anchor" href="#deployment" aria-hidden="true"><span class="octicon octicon-link"></span></a>Deployment</h2>
 
 <h3>
-<a name="first-deployment" class="anchor" href="#first-deployment"><span class="octicon octicon-link"></span></a>First deployment</h3>
+<a id="first-deployment" class="anchor" href="#first-deployment" aria-hidden="true"><span class="octicon octicon-link"></span></a>First deployment</h3>
 
 <ol>
 <li>
@@ -125,15 +125,18 @@ solution from the <a href="http://locomotivecms.com/crew" title="The crew behind
 </ol>
 
 <h3>
-<a name="regular-deployment" class="anchor" href="#regular-deployment"><span class="octicon octicon-link"></span></a>Regular deployment</h3>
+<a id="regular-deployment" class="anchor" href="#regular-deployment" aria-hidden="true"><span class="octicon octicon-link"></span></a>Regular deployment</h3>
 
 <ol>
 <li><p>Check-in and push your changes</p></li>
 <li><p>Run <code>cap &lt;stage&gt; deploy</code> to deploy a new version to the specified stage</p></li>
 </ol>
 
+<h2>
+<a id="tasks" class="anchor" href="#tasks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tasks</h2>
+
 <h3>
-<a name="unicorn" class="anchor" href="#unicorn"><span class="octicon octicon-link"></span></a>Unicorn</h3>
+<a id="unicorn" class="anchor" href="#unicorn" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unicorn</h3>
 
 <p>Start Unicorn</p>
 
@@ -150,35 +153,58 @@ solution from the <a href="http://locomotivecms.com/crew" title="The crew behind
 <pre><code>$ cap &lt;stage&gt; unicorn:restart
 </code></pre>
 
+<h3>
+<a id="misc" class="anchor" href="#misc" aria-hidden="true"><span class="octicon octicon-link"></span></a>Misc</h3>
+
+<p>Clear sessions, cache, and socket files from <code>tmp</code></p>
+
+<pre><code>$ cap &lt;stage&gt; cake task=tmp:clear
+</code></pre>
+
+<p>Clear sessions</p>
+
+<pre><code>$ cap &lt;stage&gt; cake task=tmp:sessions:clear
+</code></pre>
+
+<p>Clear cache</p>
+
+<pre><code>$ cap &lt;stage&gt; cake task=tmp:cache:clear
+</code></pre>
+
+<p>Clear sockets</p>
+
+<pre><code>$ cap &lt;stage&gt; cake task=tmp:sockets:clear
+</code></pre>
+
 <h2>
-<a name="configuration" class="anchor" href="#configuration"><span class="octicon octicon-link"></span></a>Configuration</h2>
+<a id="configuration" class="anchor" href="#configuration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Configuration</h2>
 
 <h3>
-<a name="nginx" class="anchor" href="#nginx"><span class="octicon octicon-link"></span></a>Nginx</h3>
+<a id="nginx" class="anchor" href="#nginx" aria-hidden="true"><span class="octicon octicon-link"></span></a>Nginx</h3>
 
 <p>Take a look at <a href="https://github.com/bitaculous/locoroco/blob/master/resources/config/nginx/sample.conf" title="Nginx configuration (sample)">resources/config/nginx/sample.conf</a> as an inspiration on how to configure Nginx.</p>
 
 <h2>
-<a name="code-status" class="anchor" href="#code-status"><span class="octicon octicon-link"></span></a>Code Status</h2>
+<a id="code-status" class="anchor" href="#code-status" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code Status</h2>
 
-<p><a href="https://travis-ci.org/bitaculous/locoroco" title="LocoRoco at Travis CI"><img src="http://img.shields.io/travis/bitaculous/locoroco.svg?style=flat" alt="Travis CI Status" title="Travis CI Status"></a>
-<a href="https://gemnasium.com/bitaculous/locoroco" title="LocoRoco at Gemnasium"><img src="http://img.shields.io/gemnasium/bitaculous/locoroco.svg?style=flat" alt="Gemnasium Status" title="Gemnasium Status"></a></p>
+<p><a href="https://travis-ci.org/bitaculous/locoroco" title="LocoRoco at Travis CI"><img src="https://img.shields.io/travis/bitaculous/locoroco.svg?style=flat" alt="Travis CI Status" title="Travis CI Status"></a>
+<a href="https://gemnasium.com/bitaculous/locoroco" title="LocoRoco at Gemnasium"><img src="https://img.shields.io/gemnasium/bitaculous/locoroco.svg?style=flat" alt="Gemnasium Status" title="Gemnasium Status"></a></p>
 
 <h2>
-<a name="bug-reports" class="anchor" href="#bug-reports"><span class="octicon octicon-link"></span></a>Bug Reports</h2>
+<a id="bug-reports" class="anchor" href="#bug-reports" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bug Reports</h2>
 
 <p>Github Issues are used for managing bug reports and feature requests. If you run into issues, please search the issues
 and submit new problems <a href="https://github.com/bitaculous/locoroco/issues" title="Github Issues">here</a>.</p>
 
 <h2>
-<a name="versioning" class="anchor" href="#versioning"><span class="octicon octicon-link"></span></a>Versioning</h2>
+<a id="versioning" class="anchor" href="#versioning" aria-hidden="true"><span class="octicon octicon-link"></span></a>Versioning</h2>
 
 <p>This project aims to adhere to <a href="http://semver.org" title="Semantic Versioning 2.0.0">Semantic Versioning 2.0.0</a>. Violations of this scheme should be reported as bugs.
 Specifically, if a minor or patch version is released that breaks backward compatibility, that version should be
 immediately yanked and / or a new version should be immediately released that restores compatibility.</p>
 
 <h2>
-<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
 
 <p>LocoRoco is released under the <a href="http://opensource.org/licenses/MIT" title="The MIT License (MIT)">MIT License (MIT)</a>, see <a href="https://raw.githubusercontent.com/bitaculous/locoroco/master/LICENSE" title="License">LICENSE</a>.</p>
       </section>
