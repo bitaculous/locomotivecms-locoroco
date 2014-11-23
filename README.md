@@ -126,7 +126,7 @@ $ cap <stage> unicorn:restart
 
 ### Misc
 
-Clear sessions, cache, and socket files from `tmp`
+Clear sessions, cache, and socket files
 
 ```
 $ cap <stage> cake task=tmp:clear
