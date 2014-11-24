@@ -44,7 +44,7 @@ group :development, :test do
 
   # === Preloader ===
 
-  gem 'spring', '~> 1.1.3', require: false
+  gem 'spring', '~> 1.2.0', require: false
 
   gem 'spring-commands-rspec', '~> 1.0.2', require: false
 end
@@ -68,8 +68,6 @@ group :test do
 end
 
 group :assets do
-  gem 'turbo-sprockets-rails3', '~> 0.3.14'
-
   # === Cascading Style Sheets ===
 
   gem 'sass-rails', '~> 3.2.6'
@@ -83,6 +81,10 @@ group :assets do
   gem 'uglifier', '~> 2.5.3'
 
   gem 'therubyracer', '~> 0.12.1', require: RUBY_PLATFORM.include?('linux') && 'v8'
+
+  # === Sprockets ===
+
+  gem 'turbo-sprockets-rails3', '~> 0.3.14'
 end
 
 group :deployment do
