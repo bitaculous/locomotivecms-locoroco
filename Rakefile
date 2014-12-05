@@ -6,4 +6,5 @@ require File.expand_path '../config/application', __FILE__
 
 Bitaculous::Locoroco::Application.load_tasks
 
-task default: :spec # Run all specs as default task
+# Run all specs as default task.
+task default: :spec
