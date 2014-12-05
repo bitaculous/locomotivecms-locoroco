@@ -157,6 +157,28 @@ Configuration
 
 Take a look at [resources/config/nginx/sample.conf] as an inspiration on how to configure Nginx.
 
+Development
+-----------
+
+### Specs
+
+Use the `rspec` command to run your specs:
+
+```
+$ rspec
+```
+
+### Spring (Rails application preloader)
+
+```
+$ spring status
+
+$ spring rspec
+
+$ spring start
+$ spring stop
+```
+
 Bug Reports
 -----------
 
