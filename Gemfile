@@ -40,7 +40,7 @@ end
 group :development, :test do
   # === RSpec ===
 
-  gem 'rspec-rails', '~> 3.1.0', require: false
+  gem 'rspec-rails', '~> 3.1.0'
 
   # === Preloader ===
 
