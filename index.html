@@ -156,7 +156,7 @@ solution from the <a href="http://locomotivecms.com/crew" title="The crew behind
 <h3>
 <a id="misc" class="anchor" href="#misc" aria-hidden="true"><span class="octicon octicon-link"></span></a>Misc</h3>
 
-<p>Clear sessions, cache, and socket files from <code>tmp</code></p>
+<p>Clear sessions, cache, and socket files</p>
 
 <pre><code>$ cap &lt;stage&gt; cake task=tmp:clear
 </code></pre>
@@ -183,6 +183,28 @@ solution from the <a href="http://locomotivecms.com/crew" title="The crew behind
 <a id="nginx" class="anchor" href="#nginx" aria-hidden="true"><span class="octicon octicon-link"></span></a>Nginx</h3>
 
 <p>Take a look at <a href="https://github.com/bitaculous/locoroco/blob/master/resources/config/nginx/sample.conf" title="Nginx configuration (sample)">resources/config/nginx/sample.conf</a> as an inspiration on how to configure Nginx.</p>
+
+<h2>
+<a id="development" class="anchor" href="#development" aria-hidden="true"><span class="octicon octicon-link"></span></a>Development</h2>
+
+<h3>
+<a id="specs" class="anchor" href="#specs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Specs</h3>
+
+<p>Use the <code>rspec</code> command to run your specs:</p>
+
+<pre><code>$ rspec
+</code></pre>
+
+<h3>
+<a id="spring-rails-application-preloader" class="anchor" href="#spring-rails-application-preloader" aria-hidden="true"><span class="octicon octicon-link"></span></a>Spring (Rails application preloader)</h3>
+
+<pre><code>$ spring status
+
+$ spring rspec
+
+$ spring start
+$ spring stop
+</code></pre>
 
 <h2>
 <a id="code-status" class="anchor" href="#code-status" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code Status</h2>
