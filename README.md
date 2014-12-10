@@ -1,7 +1,7 @@
 [LocoRoco]
 ==========
 
-**A “ready to deploy” [LocomotiveCMS] package.**
+**A ready to deploy [LocomotiveCMS] package.**
 
 [![Travis CI Status][Travis CI Status]][Travis CI]
 [![Gemnasium Status][Gemnasium Status]][Gemnasium]
@@ -210,7 +210,7 @@ LocoRoco is released under the [MIT License (MIT)], see [LICENSE].
 [LICENSE]: https://raw.githubusercontent.com/bitaculous/locoroco/master/LICENSE "License"
 [LocomotiveCMS]: http://locomotivecms.com "An open source CMS for Rails"
 [LocomotiveHosting]: https://locomotivehosting.com "Host your LocomotiveCMS website here."
-[LocoRoco]: https://bitaculous.github.io/locoroco/ "A “ready to deploy” LocomotiveCMS package."
+[LocoRoco]: https://bitaculous.github.io/locoroco/ "A ready to deploy LocomotiveCMS package."
 [LocoRoco master]: https://github.com/bitaculous/locoroco/archive/master.zip "Download the LocoRoco master as a zip file"
 [MIT License (MIT)]: http://opensource.org/licenses/MIT "The MIT License (MIT)"
 [Nginx]: http://nginx.com "A free, open-source, high-performance HTTP server and reverse proxy"
