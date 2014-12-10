@@ -162,7 +162,7 @@ Development
 
 ### Specs
 
-Use the `rspec` command to run your specs:
+Use the `rspec` command to run the specs:
 
 ```
 $ rspec
