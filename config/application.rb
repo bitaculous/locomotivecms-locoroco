@@ -18,7 +18,7 @@ module Bitaculous
   module Locoroco
     class Application < Rails::Application
       # Settings in `config/environments/*` take precedence over those specified here. Application configuration should
-      # go into files in `config/initializers`, all *.rb files in that directory are automatically loaded.
+      # go into files in `config/initializers` - all ruby files in that directory are automatically loaded.
 
       # Custom directories with classes and modules you want to be autoloadable.
       # config.autoload_paths += %W[#{config.root}/extras]

@@ -42,19 +42,19 @@ end
 group :development, :test do
   # === RSpec ===
 
-  gem 'rspec-rails', '~> 3.1.0', require: false
+  gem 'rspec-rails', '~> 3.1.0'
 
   # === Preloader ===
 
   gem 'spring', '~> 1.2.0', require: false
 
-  gem 'spring-commands-rspec', '~> 1.0.2', require: false
+  gem 'spring-commands-rspec', '~> 1.0.3', require: false
 end
 
 group :development do
   # === Guard ===
 
-  gem 'guard-rspec', '~> 4.3.1', require: false
+  gem 'guard-rspec', '~> 4.4.2', require: false
 
   # === Ooops! ===
 
@@ -66,7 +66,7 @@ end
 group :test do
   # === Formatter ===
 
-  gem 'nyan-cat-formatter', '~> 0.10.1', require: false
+  gem 'nyan-cat-formatter', '~> 0.11', require: false
 end
 
 group :assets do
@@ -80,7 +80,7 @@ group :assets do
 
   gem 'coffee-rails', '~> 3.2.2'
 
-  gem 'uglifier', '~> 2.5.3'
+  gem 'uglifier', '~> 2.6.0'
 
   gem 'therubyracer', '~> 0.12.1', require: RUBY_PLATFORM.include?('linux') && 'v8'
 
@@ -92,7 +92,7 @@ end
 group :deployment do
   # === Capistrano ===
 
-  gem 'capistrano', '~> 3.2.1', require: false
+  gem 'capistrano', '~> 3.3.4', require: false
 
   gem 'capistrano-rvm', '~> 0.1.2', require: false
 

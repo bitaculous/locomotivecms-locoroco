@@ -1,5 +1,5 @@
 Bitaculous::Locoroco::Application.routes.draw do
-  # Mount LocomotiveCMS as engine
+  # Mount LocomotiveCMS as engine.
   mount Locomotive::Engine => '/locomotive', as: 'locomotive'
 
   # Add route for sitemap (german version)
