@@ -7,13 +7,13 @@ DRAGONFLY_SECRET: "<DRAGONFLY_SECRET>"
 # TIMEZONE: "UTC"
 
 development:
-  MONGODB_URI: "mongodb://user:password@server:port_name/database"
+  MONGODB_URI: "mongodb://<USER>:<PASSWORD>@<SERVER>:<PORT>/<DATABASE>"
 
 test:
-  MONGODB_URI: "mongodb://user:password@server:port_name/database"
+  MONGODB_URI: "mongodb://<USER>:<PASSWORD>@<SERVER>:<PORT>/<DATABASE>"
 
 production:
-  MONGODB_URI: "mongodb://user:password@server:port_name/database"
+  MONGODB_URI: "mongodb://<USER>:<PASSWORD>@<SERVER>:<PORT>/<DATABASE>"
 
   # If assets are hosted on Amazon S3:
   # S3_KEY_ID: "<S3_KEY_ID>"
