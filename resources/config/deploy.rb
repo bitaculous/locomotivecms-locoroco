@@ -1,5 +1,5 @@
-# Lock configuration for Capistrano `3.3.4`
-lock '3.3.4'
+# Lock configuration for Capistrano `3.3.5`
+lock '3.3.5'
 
 set :domain, 'bitaculous.com'
 set :application, 'locoroco'
