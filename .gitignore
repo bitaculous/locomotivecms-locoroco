@@ -1,4 +1,5 @@
 /.bundle/
+/.capistrano/
 /.sass-cache/
 /assets_manifest.yml
 /config/application.yml
