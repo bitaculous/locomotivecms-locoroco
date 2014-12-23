@@ -46,17 +46,17 @@ group :development, :test do
 
   gem 'spring', '~> 1.2.0', require: false
 
-  gem 'spring-commands-rspec', '~> 1.0.3', require: false
+  gem 'spring-commands-rspec', '~> 1.0.4', require: false
 end
 
 group :development do
   # === Guard ===
 
-  gem 'guard-rspec', '~> 4.4.2', require: false
+  gem 'guard-rspec', '~> 4.5.0', require: false
 
   # === Ooops! ===
 
-  gem 'better_errors', '~> 2.0.0', require: false
+  gem 'better_errors', '~> 2.1.0', require: false
 
   gem 'binding_of_caller', '~> 0.7.2', require: false
 end
@@ -90,7 +90,7 @@ end
 group :deployment do
   # === Capistrano ===
 
-  gem 'capistrano', '~> 3.3.4', require: false
+  gem 'capistrano', '~> 3.3.5', require: false
 
   gem 'capistrano-rvm', '~> 0.1.2', require: false
 
