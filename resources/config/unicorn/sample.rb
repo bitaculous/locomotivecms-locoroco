@@ -10,14 +10,14 @@ working_directory APP_PATH
 # Preload application, this loads the application in the master process before forking worker processes.
 preload_app true
 
-# Enable this flag to have unicorn test client connections by writing the beginning of the HTTP headers before calling
+# Enable this flag to have Unicorn test client connections, by writing the beginning of the HTTP headers, before calling
 # the application. This prevents calling the application for connections that have disconnected while queued. This is
-# only guaranteed to detect clients on the same host unicorn runs on, and unlikely to detect disconnects even on a fast
+# only guaranteed to detect clients on the same host Unicorn runs on, and unlikely to detect disconnects, even on a fast
 # LAN.
 check_client_connection false
 
-# Use at least one worker per core if you're on a dedicated server, more will usually help for “short waits” on
-# databases / caches.
+# Set the number of worker processes. Use at least one worker per core if you're on a dedicated server, more will
+# *usually* help for “short waits”.
 worker_processes 2
 
 # Nuke workers after 30 seconds instead of 60 seconds, which is the default.
@@ -51,7 +51,7 @@ before_fork do |server, worker|
       signal = (worker.nr + 1) >= server.worker_processes ? :QUIT : :TTOU
       Process.kill(signal, File.read(old_pid).to_i)
     rescue Errno::ENOENT, Errno::ESRCH
-      # Someone else did the job for us
+      # Someone else did the job for us...
     end
   end
 
@@ -62,8 +62,8 @@ before_fork do |server, worker|
 end
 
 after_fork do |server, worker|
-  # If `preload_app true`, then you may also want to check and restart any other shared sockets / descriptors such as
-  # Memcached, Redis, etc. - here is the perfect place for.
+  # If preloading is enabled (`preload_app true`), then you may also want to check and restart any other shared sockets
+  # or descriptors such as Memcached, Redis, etc. - here is the perfect place for.
 
   # Per-process listener for migrations, debugging etc.
   # address = "127.0.0.1:#{9293 + worker.nr}"
