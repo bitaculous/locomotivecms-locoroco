@@ -42,7 +42,7 @@ Devise.setup do |config|
   # Tell if authentication through request parameters is enabled. It can be set to an array that will enable parameters
   # authentication only for the given strategies, for example, `config.params_authenticatable = [:database]` will enable
   # it only for database (email + password) authentication.
-  # config.params_authenticatable = true
+  # config.params_authenticatable = false
 
   # Tell if authentication through HTTP Auth is enabled. It can be set to an array that will enable HTTP authentication
   # only for the given strategies, for example, `config.http_authenticatable = [:token]` will enable it only for token
@@ -96,7 +96,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = 'f63b8c94d1557deed284f286f54dc546c9a63a7d1105f35bb9c651b0b782e334f55e5aa75a15ca6681ae274b5624138130e6cdb3315ac52b5fd8ae5e7849f373'
+  config.pepper = ENV['DEVISE_PEPPER']
 
   # --- Confirmable ---
 
