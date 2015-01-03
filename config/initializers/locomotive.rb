@@ -62,7 +62,7 @@ Locomotive.configure do |config|
   # Configure the email address which will be shown in the `DeviseMailer`, `NotificationMailer`, etc. If you do not put
   # the domain name in the email, LocomotiveCMS will take the default domain name depending on your deployment target
   # (server, Heroku, Bushido, etc.).
-  config.mailer_sender = 'support@bitaculous.com'
+  config.mailer_sender = ENV['MAILER_SENDER']
 
   # Tell if logs are enabled, useful for debug purpose.
   config.enable_logs = true
