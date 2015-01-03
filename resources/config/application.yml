@@ -1,7 +1,11 @@
 SECRET_TOKEN: "<SECRET_TOKEN>"
 COOKIE_STORE_KEY: "<COOKIE_STORE_KEY>"
 
+DEVISE_PEPPER: "<DEVISE_PEPPER>"
+
 DRAGONFLY_SECRET: "<DRAGONFLY_SECRET>"
+
+MAILER_SENDER: "<MAILER_SENDER>"
 
 # Set timezone to a specified zone. Run `rake -D time` for a list of tasks for finding time zone names.
 # TIMEZONE: "UTC"

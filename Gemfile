@@ -20,6 +20,10 @@ group :default do
 
   gem 'unicorn', '~> 4.8.3', require: false
 
+  # === Mongoid  ===
+
+  gem 'bson_ext', '~> 1.11.1'
+
   # === Configuration ===
 
   gem 'figaro', '~> 1.0.0'
