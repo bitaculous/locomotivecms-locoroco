@@ -33,11 +33,11 @@ Devise.setup do |config|
 
   # Configure which authentication keys should be case-insensitive. These keys will be downcased upon creating or
   # modifying a user and when used to authenticate or find a user.
-  # config.case_insensitive_keys = [:email]
+  config.case_insensitive_keys = [:email]
 
   # Configure which authentication keys should have whitespace stripped. These keys will have whitespace before and
   # after removed upon creating or modifying a user and when used to authenticate or find a user.
-  # config.strip_whitespace_keys = [:email]
+  config.strip_whitespace_keys = [:email]
 
   # Tell if authentication through request parameters is enabled. It can be set to an array that will enable parameters
   # authentication only for the given strategies, for example, `config.params_authenticatable = [:database]` will enable
@@ -115,7 +115,7 @@ Devise.setup do |config|
   # If `true`, requires any email changes to be confirmed (exactly the same way as initial account confirmation) to be
   # applied. Requires additional `unconfirmed_email` database field. Until confirmed new email is stored in unconfirmed
   # email column, and copied to email column on successful confirmation.
-  # config.reconfirmable = true
+  config.reconfirmable = true
 
   # Defines which keys will be used when confirming an account.
   # config.confirmation_keys = [:email]
@@ -135,7 +135,7 @@ Devise.setup do |config|
   # --- Validatable ---
 
   # Range for password length.
-  # config.password_length = 8..128
+  config.password_length = 8..128
 
   # Email regex used to validate email formats. It simply asserts that one (and only one) `@` exists in the given string.
   # This is mainly to give user feedback and not to assert the email validity.
@@ -202,7 +202,7 @@ Devise.setup do |config|
 
   # Time interval you can reset your password with a reset password key. Don't put a too small interval or your users
   # won't have the time to change their passwords.
-  # config.reset_password_within = 6.hours
+  config.reset_password_within = 6.hours
 
   # --- Encryptable ---
 
@@ -245,7 +245,7 @@ Devise.setup do |config|
   # config.navigational_formats = ['*/*', :html]
 
   # The default HTTP method used to sign out a resource.
-  # config.sign_out_via = :delete
+  config.sign_out_via = :delete
 
   # === OmniAuth ===
 
