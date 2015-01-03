@@ -78,7 +78,7 @@ group :assets do
 
   gem 'coffee-rails', '~> 3.2.2'
 
-  gem 'uglifier', '~> 2.6.0'
+  gem 'uglifier', '~> 2.6.1'
 
   gem 'therubyracer', '~> 0.12.1', require: RUBY_PLATFORM.include?('linux') && 'v8'
 
