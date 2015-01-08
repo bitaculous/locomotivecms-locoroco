@@ -162,21 +162,21 @@ Development
 
 ### Specs
 
-Use the `rspec` command to run the specs:
+Use the `rspec` binary to run the specs:
 
 ```
-$ rspec
+$ ./bin/rspec
 ```
 
 ### Spring (Rails application preloader)
 
 ```
-$ spring status
+$ ./bin/spring status
 
-$ spring rspec
+$ ./bin/spring rspec
 
-$ spring start
-$ spring stop
+$ ./bin/spring start
+$ ./bin/spring stop
 ```
 
 Bug Reports
