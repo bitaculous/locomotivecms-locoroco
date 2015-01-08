@@ -162,7 +162,7 @@ Development
 
 ### Specs
 
-Use the `rspec` binary to run the specs:
+Use the `rspec` bin stub to run the specs:
 
 ```
 $ ./bin/rspec
