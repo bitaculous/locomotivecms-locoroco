@@ -60,7 +60,7 @@ group :development do
 
   # === Ooops! ===
 
-  gem 'better_errors', '~> 2.1.0', require: false
+  gem 'better_errors', '~> 2.1.1', require: false
 
   gem 'binding_of_caller', '~> 0.7.2', require: false
 end
@@ -76,13 +76,13 @@ group :assets do
 
   gem 'sass-rails', '~> 3.2.6'
 
-  gem 'compass-rails', '~> 2.0.3'
+  gem 'compass-rails', '~> 2.0.4'
 
   # === JavaScript ===
 
   gem 'coffee-rails', '~> 3.2.2'
 
-  gem 'uglifier', '~> 2.6.1'
+  gem 'uglifier', '~> 2.7.0'
 
   gem 'therubyracer', '~> 0.12.1', require: RUBY_PLATFORM.include?('linux') && 'v8'
 
