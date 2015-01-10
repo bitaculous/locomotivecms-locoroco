@@ -168,6 +168,12 @@ Use the `rspec` bin stub to run the specs:
 $ ./bin/rspec
 ```
 
+or via [Guard]:
+
+```
+$ guard -g spec
+```
+
 ### Spring (Rails application preloader)
 
 ```
@@ -206,6 +212,7 @@ LocoRoco is released under the [MIT License (MIT)], see [LICENSE].
 [config/initializers/locomotive.rb]: https://github.com/bitaculous/locoroco/blob/master/config/initializers/locomotive.rb "LocomotiveCMS initializer"
 [Gemnasium]: https://gemnasium.com/bitaculous/locoroco "LocoRoco at Gemnasium"
 [Gemnasium Status]: https://img.shields.io/gemnasium/bitaculous/locoroco.svg?style=flat "Gemnasium Status"
+[Guard]: http://guardgem.org "A command line tool to easily handle events on file system modifications."
 [here]: https://github.com/bitaculous/locoroco/issues "Github Issues"
 [LICENSE]: https://raw.githubusercontent.com/bitaculous/locoroco/master/LICENSE "License"
 [LocomotiveCMS]: http://locomotivecms.com "An open source CMS for Rails"
