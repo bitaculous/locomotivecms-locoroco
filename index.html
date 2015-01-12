@@ -57,7 +57,7 @@ solution from the <a href="http://locomotivecms.com/crew" title="The crew behind
 <a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting started</h2>
 
 <ol>
-<li><p>Download the <a href="https://github.com/bitaculous/locoroco/archive/master.zip" title="Download the LocoRoco master as a zip file">LocoRoco master</a> or a specific <a href="https://github.com/bitaculous/locoroco/releases" title="LocoRoco releases">release</a></p></li>
+<li><p>Download the <a href="https://github.com/bitaculous/locoroco/archive/master.tar.gz" title="LocoRoco master (master.tar.gz)">LocoRoco master</a> or a specific <a href="https://github.com/bitaculous/locoroco/releases" title="LocoRoco releases">release</a></p></li>
 <li><p>Unpack the file</p></li>
 <li>
 <p>Install all dependencies with <a href="http://bundler.io" title="The best way to manage a Ruby application's gems">Bundler</a></p>
@@ -78,7 +78,34 @@ solution from the <a href="http://locomotivecms.com/crew" title="The crew behind
 </li>
 </ol>
 
-<p>That's it, LocoRoco should run <a href="http://0.0.0.0:8080" title="LocomotiveCMS installation">on</a>.</p>
+<p>That's it, LocomotiveCMS should run <a href="http://0.0.0.0:8080" title="LocomotiveCMS installation">on</a>.</p>
+
+<h2>
+<a id="development" class="anchor" href="#development" aria-hidden="true"><span class="octicon octicon-link"></span></a>Development</h2>
+
+<h3>
+<a id="specs" class="anchor" href="#specs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Specs</h3>
+
+<p>Use the <code>rspec</code> bin stub to run the specs:</p>
+
+<pre><code>$ ./bin/rspec
+</code></pre>
+
+<p>or via <a href="http://guardgem.org" title="A command line tool to easily handle events on file system modifications.">Guard</a>:</p>
+
+<pre><code>$ guard -g spec
+</code></pre>
+
+<h3>
+<a id="spring-rails-application-preloader" class="anchor" href="#spring-rails-application-preloader" aria-hidden="true"><span class="octicon octicon-link"></span></a>Spring (Rails application preloader)</h3>
+
+<pre><code>$ ./bin/spring status
+
+$ ./bin/spring rspec
+
+$ ./bin/spring start
+$ ./bin/spring stop
+</code></pre>
 
 <h2>
 <a id="deployment" class="anchor" href="#deployment" aria-hidden="true"><span class="octicon octicon-link"></span></a>Deployment</h2>
@@ -183,28 +210,6 @@ solution from the <a href="http://locomotivecms.com/crew" title="The crew behind
 <a id="nginx" class="anchor" href="#nginx" aria-hidden="true"><span class="octicon octicon-link"></span></a>Nginx</h3>
 
 <p>Take a look at <a href="https://github.com/bitaculous/locoroco/blob/master/resources/config/nginx/sample.conf" title="Nginx configuration (sample)">resources/config/nginx/sample.conf</a> as an inspiration on how to configure Nginx.</p>
-
-<h2>
-<a id="development" class="anchor" href="#development" aria-hidden="true"><span class="octicon octicon-link"></span></a>Development</h2>
-
-<h3>
-<a id="specs" class="anchor" href="#specs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Specs</h3>
-
-<p>Use the <code>rspec</code> command to run the specs:</p>
-
-<pre><code>$ rspec
-</code></pre>
-
-<h3>
-<a id="spring-rails-application-preloader" class="anchor" href="#spring-rails-application-preloader" aria-hidden="true"><span class="octicon octicon-link"></span></a>Spring (Rails application preloader)</h3>
-
-<pre><code>$ spring status
-
-$ spring rspec
-
-$ spring start
-$ spring stop
-</code></pre>
 
 <h2>
 <a id="code-status" class="anchor" href="#code-status" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code Status</h2>
