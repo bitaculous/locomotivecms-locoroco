@@ -218,7 +218,7 @@ LocoRoco is released under the [MIT License (MIT)], see [LICENSE].
 [LocomotiveCMS]: http://locomotivecms.com "An open source CMS for Rails"
 [LocomotiveHosting]: https://locomotivehosting.com "Host your LocomotiveCMS website here."
 [LocoRoco]: https://bitaculous.github.io/locoroco/ "A ready to deploy LocomotiveCMS package."
-[LocoRoco master]: https://github.com/bitaculous/locoroco/archive/master.zip "Download the LocoRoco master as a zip file"
+[LocoRoco master]: https://github.com/bitaculous/locoroco/archive/master.tar.gz "LocoRoco master (master.tar.gz)"
 [MIT License (MIT)]: http://opensource.org/licenses/MIT "The MIT License (MIT)"
 [Nginx]: http://nginx.com "A free, open-source, high-performance HTTP server and reverse proxy"
 [on]: http://0.0.0.0:8080 "LocomotiveCMS installation"
