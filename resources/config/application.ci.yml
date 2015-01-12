@@ -13,4 +13,4 @@ MAILER_SENDER: "dev@bitaculous.com"
 TIMEZONE: "Berlin"
 
 test:
-  MONGODB_URI: "mongodb://127.0.0.1:27017/bitaculous-locoroco_test"
+  MONGODB_URI: "mongodb://127.0.0.1:27017/bitaculous_locoroco_test"
