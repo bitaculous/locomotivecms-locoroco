@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 describe Application::TagHelper do
   describe '#html_tag' do
     let(:conditional_html_tags) {

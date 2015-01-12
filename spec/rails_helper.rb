@@ -2,6 +2,7 @@ ENV['RAILS_ENV'] ||= 'test'
 
 require 'spec_helper'
 
+# Load the Rails stack
 require File.expand_path '../../config/environment', __FILE__
 
 require 'rspec/rails'
@@ -9,7 +10,7 @@ require 'rspec/rails'
 # Requires shared examples in `spec/shared` and its subdirectories.
 Dir[Rails.root.join('spec/shared/**/*.rb')].each { |file| require file }
 
-# Requires supporting ruby files with custom matchers and macros, etc, in `spec/support` and its subdirectories. Files
+# Requires supporting ruby files with custom matchers and macros, etc. in `spec/support` and its subdirectories. Files
 # matching `spec/**/*_spec.rb` are run as spec files by default. This means that files in `spec/support` that end in
 # `_spec.rb` will both be required and run as specs, causing the specs to be run twice. It is recommended that you do
 # not name files matching this glob to end with `_spec.rb`. You can configure this pattern with the `--pattern` option
