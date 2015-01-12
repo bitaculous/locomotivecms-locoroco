@@ -52,7 +52,35 @@ Getting started
     $ unicorn_rails
     ```
 
-That's it, LocoRoco should run [on].
+That's it, LocomotiveCMS should run [on].
+
+Development
+-----------
+
+### Specs
+
+Use the `rspec` bin stub to run the specs:
+
+```
+$ ./bin/rspec
+```
+
+or via [Guard]:
+
+```
+$ guard -g spec
+```
+
+### Spring (Rails application preloader)
+
+```
+$ ./bin/spring status
+
+$ ./bin/spring rspec
+
+$ ./bin/spring start
+$ ./bin/spring stop
+```
 
 Deployment
 ----------
@@ -156,34 +184,6 @@ Configuration
 ### Nginx
 
 Take a look at [resources/config/nginx/sample.conf] as an inspiration on how to configure Nginx.
-
-Development
------------
-
-### Specs
-
-Use the `rspec` bin stub to run the specs:
-
-```
-$ ./bin/rspec
-```
-
-or via [Guard]:
-
-```
-$ guard -g spec
-```
-
-### Spring (Rails application preloader)
-
-```
-$ ./bin/spring status
-
-$ ./bin/spring rspec
-
-$ ./bin/spring start
-$ ./bin/spring stop
-```
 
 Bug Reports
 -----------

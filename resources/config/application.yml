@@ -1,4 +1,4 @@
-# For *SECRET* and *PEPPER* keys, use `rake secret` to generate adequate keys.
+# For *SECRET* and *PEPPER* keys, use `rake secret` to generate secure keys.
 
 SECRET_TOKEN: "<SECRET_TOKEN>"
 COOKIE_STORE_KEY: "<COOKIE_STORE_KEY>"
