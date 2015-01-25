@@ -1,7 +1,7 @@
 # For *SECRET* and *PEPPER* keys, use `rake secret` to generate adequate keys.
 
 SECRET_TOKEN: "fb15587ba674c7d04f87709e8ca7b92d4d3316b854fe51dc772f174f03587fb6d1ccafb5da75c5f55b5eb5fa07e728a199e4bcab43cf710135d8bb5e4a09ec10"
-COOKIE_STORE_KEY: "_bitaculous_locoroco_session"
+COOKIE_STORE_KEY: "_locomotivecms_locoroco_session"
 
 DEVISE_PEPPER: "51d78ba17ad8fb1d6afbb4d0ca89a3cb466a604dcb06582eade2a469cf512a8f8954ca18774410739b59df813ba770b5fb954caa50313553b7d6921bae2d60d4"
 
@@ -13,4 +13,4 @@ MAILER_SENDER: "dev@bitaculous.com"
 TIMEZONE: "Berlin"
 
 test:
-  MONGODB_URI: "mongodb://127.0.0.1:27017/bitaculous_locoroco_test"
+  MONGODB_URI: "mongodb://127.0.0.1:27017/locomotivecms_locoroco_test"

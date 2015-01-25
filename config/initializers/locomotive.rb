@@ -1,10 +1,10 @@
 Locomotive.configure do |config|
   # A single LocomotiveCMS instance can serve one single site or many. If you want to run many different websites,
-  # you will have to specify your own domain name (e.g. `example.com`).
+  # you will have to specify your own domain name (e.g. `locomotivecms.com`).
   config.multi_sites do |multi_sites|
     # Each new website you add will have a default entry based on a subdomain and the `multi_site_domain` value (e.g.
-    # `foo.bitaculous.com`).
-    multi_sites.domain = 'bitaculous.com'
+    # `foo.locomotivecms.com`).
+    multi_sites.domain = 'locomotivecms.com'
 
     # Define the reserved subdomains.
     # multi_sites.reserved_subdomains = %w[locoroco]
