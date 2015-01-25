@@ -1,7 +1,7 @@
 # Properly indent or format the HTML output, makes viewing the source pleasant.
 Haml::Template.options[:ugly] = false
 
-Bitaculous::Locoroco::Application.configure do
+LocomotiveCMS::Locoroco::Application.configure do
   # Settings specified here will take precedence over those in `config/application.rb`.
 
   # In the development environment your application's code is reloaded on every request. This slows down response time

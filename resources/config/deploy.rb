@@ -1,8 +1,8 @@
 # Lock configuration for Capistrano `3.3.5`
 lock '3.3.5'
 
-set :domain, 'bitaculous.com'
-set :application, 'locoroco'
+set :domain, '<DOMAIN>'
+set :application, '<APPLICATION>'
 
 set :linked_dirs, %w[log public/assets public/sites public/system tmp/cache tmp/pids tmp/sockets]
 
@@ -11,7 +11,7 @@ set :repo_url, 'https://github.com/bitaculous/locoroco.git'
 ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 set :keep_releases, 5
 
-# set :rvm_ruby_version, 'ruby-2.1.5@bitaculous-locoroco'
+# set :rvm_ruby_version, 'ruby-2.1.5@locomotivecms-locoroco'
 # set :rvm_roles, [:app, :web]
 # set :rvm_type, :system
 # set :rvm_custom_path, '/usr/local/rvm'

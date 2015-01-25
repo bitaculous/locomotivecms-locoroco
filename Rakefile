@@ -4,7 +4,7 @@
 
 require File.expand_path '../config/application', __FILE__
 
-Bitaculous::Locoroco::Application.load_tasks
+LocomotiveCMS::Locoroco::Application.load_tasks
 
 # Run all specs as default task.
 task default: :spec

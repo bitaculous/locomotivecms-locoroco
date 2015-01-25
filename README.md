@@ -1,10 +1,9 @@
 [LocoRoco]
 ==========
 
-**A ready to deploy [LocomotiveCMS] package.**
+[![Travis CI Status][Travis CI Status]][Travis CI] [![Gemnasium Status][Gemnasium Status]][Gemnasium]
 
-[![Travis CI Status][Travis CI Status]][Travis CI]
-[![Gemnasium Status][Gemnasium Status]][Gemnasium]
+**A ready to deploy [LocomotiveCMS] package.**
 
 We at [Bitaculous] really like [LocomotiveCMS], it's our favorite tool for developing websites, it's [awesome]. That's
 why we built LocoRoco, so you can easier start using LocomotiveCMS on your server.

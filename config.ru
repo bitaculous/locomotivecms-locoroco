@@ -13,4 +13,4 @@ if defined?(Unicorn::HttpRequest)
   use GC::OOB::UnicornMiddleware
 end
 
-run Bitaculous::Locoroco::Application
+run LocomotiveCMS::Locoroco::Application

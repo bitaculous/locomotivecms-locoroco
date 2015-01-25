@@ -1,4 +1,4 @@
-Bitaculous::Locoroco::Application.configure do
+LocomotiveCMS::Locoroco::Application.configure do
   # Settings specified here will take precedence over those in `config/application.rb`.
 
   # Enable threaded mode.
@@ -42,8 +42,8 @@ Bitaculous::Locoroco::Application.configure do
   config.serve_static_assets = false
 
   # Enable serving of assets from asset server(s), distributes asset requests among the corresponding four hosts
-  # `locoroco.assets0.bitaculous.com`, `locoroco.assets1.bitaculous.com`, etc.
-  # config.action_controller.asset_host = '//locoroco.assets%d.bitaculous.com'
+  # `locoroco.assets0.locomotivecms.com`, `locoroco.assets1.locomotivecms.com`, etc.
+  # config.action_controller.asset_host = '//locoroco.assets%d.locomotivecms.com'
 
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = 'X-Sendfile' # For Apache HTTP Server
