@@ -38,9 +38,9 @@ Locomotive.configure do |config|
 
   # Enable serving of assets from an asset server.
   #
-  # config.asset_host = 'https://locoroco-assets.bitaculous.com'
+  # config.asset_host = 'https://locoroco-assets.locomotivecms.com'
   # config.asset_host = -> (request, site) {
-  #   'https://locoroco-assets%d.bitaculous.com' % (request.hash % 4)
+  #   'https://locoroco-assets%d.locomotivecms.com' % (request.hash % 4)
   # }
 
   # Rack-cache settings, mainly used for the inline resizing image module.
