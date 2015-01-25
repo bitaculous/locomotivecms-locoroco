@@ -1,10 +1,10 @@
 Locomotive.configure do |config|
   # A single LocomotiveCMS instance can serve one single site or many. If you want to run many different websites,
-  # you will have to specify your own domain name (e.g. `locomotivecms.com`).
+  # you will have to specify your own domain name (e.g. `bitaculous.com`).
   config.multi_sites do |multi_sites|
     # Each new website you add will have a default entry based on a subdomain and the `multi_site_domain` value (e.g.
-    # `foo.locomotivecms.com`).
-    multi_sites.domain = 'locomotivecms.com'
+    # `foo.bitaculous.com`).
+    multi_sites.domain = 'bitaculous.com'
 
     # Define the reserved subdomains.
     # multi_sites.reserved_subdomains = %w[locoroco]
@@ -38,9 +38,9 @@ Locomotive.configure do |config|
 
   # Enable serving of assets from an asset server.
   #
-  # config.asset_host = 'https://locoroco-assets.locomotivecms.com'
+  # config.asset_host = 'https://locoroco-assets.bitaculous.com'
   # config.asset_host = -> (request, site) {
-  #   'https://locoroco-assets%d.locomotivecms.com' % (request.hash % 4)
+  #   'https://locoroco-assets%d.bitaculous.com' % (request.hash % 4)
   # }
   config.asset_host = 'https://locoroco-assets.bitaculous.com'
 
