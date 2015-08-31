@@ -1,3 +1,4 @@
+/*.sublime-workspace
 /.bundle/
 /.capistrano/
 /assets_manifest.yml
@@ -6,7 +7,6 @@
 /config/deploy/*.rb
 /config/environments/*.rb
 /config/unicorn/*.rb
-/locoroco.sublime-workspace
 /log/
 /public/assets/
 /public/system/
